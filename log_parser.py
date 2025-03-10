@@ -25,10 +25,15 @@ log_files: List[str] = glob.glob(os.path.join(log_dir, "Journal.*.log"))
 cargo_file: str = os.path.join(log_dir, "Cargo.json")
 backpack_file: str = os.path.join(log_dir, "Backpack.json")
 ship_locker_file: str = os.path.join(log_dir, "ShipLocker.json")
-previous_state_file: str = os.path.join(log_dir, "previous_state.json")  # Persistent state
 session_log_file: str = os.path.join(log_dir, "session_logs.json")       # Historical logs
 
-# Load previous material states with error handling
+# Define output folder and file names for history and processed index
+rag_data_folder = os.path.join(os.path.dirname(__file__), "rag_data")
+HISTORY_FILE = os.path.join(rag_data_folder, "commander_history.json")
+INDEX_FILE = os.path.join(rag_data_folder, "commander_history_index.json")
+
+# Load previous material states with error handling (unchanged)
+previous_state_file: str = os.path.join(log_dir, "previous_state.json")
 if os.path.exists(previous_state_file):
     try:
         with open(previous_state_file, "r", encoding="utf-8") as f:
@@ -41,7 +46,6 @@ else:
 
 
 def save_previous_state(data: Dict[str, Any]) -> None:
-    """Save material states to a file for persistent tracking."""
     try:
         with open(previous_state_file, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
@@ -51,7 +55,6 @@ def save_previous_state(data: Dict[str, Any]) -> None:
 
 
 def save_session_log(session_data: Dict[str, Any]) -> None:
-    """Save session logs for historical tracking."""
     logs: List[Any] = []
     if os.path.exists(session_log_file):
         try:
@@ -69,159 +72,186 @@ def save_session_log(session_data: Dict[str, Any]) -> None:
 
 
 def get_log_timestamp(filename: str) -> str:
-    """Extract timestamp from log filename using regex."""
     match = re.search(r"Journal\.(\d{4}-\d{2}-\d{2}T\d{6})", filename)
     return match.group(1) if match else "0000-00-00T000000"
 
 
-def process_event(
-    data: Dict[str, Any],
-    session_activities: List[str],
-    ship_status: Dict[str, str],
-    event_timestamps: Dict[str, str]
-) -> Optional[str]:
-    """
-    Process a single log event.
+def process_event(data: Dict[str, Any]) -> Optional[str]:
+    event = data.get("event", "")
+    timestamp_str = data.get("timestamp", "Unknown Timestamp")
     
-    Updates session_activities, ship_status, and event_timestamps based on the event type.
-    Returns a location log entry if the event indicates a change in location.
-    """
-    event: str = data.get("event", "")
-    event_time: str = data.get("timestamp", "Unknown Timestamp")
-    location_entry: Optional[str] = None
+    # Skip non-essential events like Music.
+    if event in ["Music"]:
+        return None
 
     if event == "FSDJump":
-        location_entry = f"Commander’s Log: Arrived in {data.get('StarSystem', 'Unknown System')} at {event_time}."
-        event_timestamps["location"] = event_time
+        return f"Arrived in {data.get('StarSystem', 'Unknown System')} at {timestamp_str}."
     elif event == "Location":
-        location_entry = f"Commander’s Log: Currently at {data.get('StarSystem', 'Unknown System')} - {data.get('Body', 'Unknown Body')} at {event_time}."
-        event_timestamps["location"] = event_time
+        return f"Currently at {data.get('StarSystem', 'Unknown System')} on {data.get('Body', 'Unknown Body')} at {timestamp_str}."
     elif event == "FuelScoop":
-        ship_status["fuel"] = f"{data.get('Total', 'Unknown')} tons (after scooping)"
+        return f"Fuel scooped: total fuel now {data.get('Total', 'Unknown')} tons at {timestamp_str}."
     elif event == "Repair":
-        session_activities.append(f"Repaired {data.get('Item', 'Unknown item')} at {event_time}.")
+        return f"Repaired {data.get('Item', 'Unknown item')} at {timestamp_str}."
     elif event == "HullDamage":
-        ship_status["modules"] = f"Hull integrity at {data.get('Health', 'Unknown')}%."
+        return f"Hull damage: integrity at {data.get('Health', 'Unknown')}% at {timestamp_str}."
     elif event in ["Docked", "Undocked"]:
-        station: str = data.get("StationName", "Unknown Station")
-        session_activities.append(f"{event} at {station} at {event_time}.")
+        station = data.get("StationName", "Unknown Station")
+        return f"{event} at {station} at {timestamp_str}."
     elif event == "MiningRefined":
-        session_activities.append(f"Refined {data.get('Type', 'Unknown Type')} while mining at {event_time}.")
+        return f"Refined {data.get('Type', 'Unknown Type')} while mining at {timestamp_str}."
     elif event == "MarketBuy":
-        session_activities.append(f"Purchased {data.get('Count', 'Unknown')}x {data.get('Type', 'Unknown')} for trading at {event_time}.")
+        return f"Purchased {data.get('Count', 'Unknown')}x {data.get('Type', 'Unknown')} for trading at {timestamp_str}."
     elif event == "MarketSell":
-        session_activities.append(f"Sold {data.get('Count', 'Unknown')}x {data.get('Type', 'Unknown')} for {data.get('TotalSale', 'Unknown')} credits at {event_time}.")
+        return f"Sold {data.get('Count', 'Unknown')}x {data.get('Type', 'Unknown')} for {data.get('TotalSale', 'Unknown')} credits at {timestamp_str}."
     elif event == "Bounty":
-        session_activities.append(f"Claimed a bounty of {data.get('Reward', 'Unknown')} credits at {event_time}.")
+        return f"Claimed a bounty of {data.get('Reward', 'Unknown')} credits at {timestamp_str}."
     elif event == "ThargoidEncounter":
-        session_activities.append(f"Encountered a Thargoid vessel at {event_time}.")
+        return f"Encountered a Thargoid vessel at {timestamp_str}."
+    elif event == "Materials":
+        raw_total = sum(item.get("Count", 0) for item in data.get("Raw", []))
+        manu_total = sum(item.get("Count", 0) for item in data.get("Manufactured", []))
+        encoded_total = sum(item.get("Count", 0) for item in data.get("Encoded", []))
+        return (f"Gathered Materials at {timestamp_str}: "
+                f"Raw: {raw_total}, Manufactured: {manu_total}, Encoded: {encoded_total}.")
+    elif event in ["FSSSignalDiscovered", "ReceiveText"]:
+        return f"{event} at {timestamp_str}."
+    else:
+        return f"{event} event at {timestamp_str}."
 
-    return location_entry
+
+def load_processed_index() -> set:
+    """Load processed log filenames from the index file."""
+    if os.path.exists(INDEX_FILE):
+        try:
+            with open(INDEX_FILE, "r", encoding="utf-8") as f:
+                index = json.load(f)
+            if isinstance(index, list):
+                return set(index)
+            else:
+                logging.warning("Unexpected index format; reinitializing.")
+                return set()
+        except Exception as e:
+            logging.error(f"Error loading index file: {e}")
+            return set()
+    else:
+        return set()
 
 
-def parse_latest_log() -> Tuple[Optional[str], Optional[str], List[str], Dict[str, str], Optional[str], Dict[str, str]]:
-    """
-    Parse the latest Elite Dangerous log file and extract:
-    - Commander name
-    - Latest location entry log (if any)
-    - Session activities
-    - Ship status
-    - Powerplay faction (if available; currently unused)
-    - Event timestamps
-    """
-    if not log_files:
-        logging.error("No log files found.")
-        return None, None, [], {"fuel": "Unknown", "modules": "No reported damage"}, None, {}
-
-    latest_file: str = max(log_files, key=get_log_timestamp)
-    logging.info(f"Reading log file: {latest_file}")
-
-    cmdr_name: str = "Commander"
-    latest_entry: Optional[str] = None
-    session_activities: List[str] = []
-    ship_status: Dict[str, str] = {"fuel": "Unknown", "modules": "No reported damage"}
-    powerplay_faction: Optional[str] = None
-    event_timestamps: Dict[str, str] = {}
-
+def save_processed_index(processed_logs: set) -> None:
+    """Save processed log filenames to the index file."""
     try:
-        with open(latest_file, "r", encoding="utf-8") as file:
-            for line in file:
-                try:
-                    data: Dict[str, Any] = json.loads(line)
-                    # Update commander name if available
-                    if "Commander" in data:
-                        cmdr_name = f"CMDR {data['Commander']}"
-                    # Process the event and update state accordingly
-                    entry: Optional[str] = process_event(data, session_activities, ship_status, event_timestamps)
-                    if entry:
-                        latest_entry = entry
-                except json.JSONDecodeError:
-                    logging.warning("Skipping invalid JSON line in log file.")
-                except Exception as e:
-                    logging.error(f"Error processing line in log file: {e}")
+        with open(INDEX_FILE, "w", encoding="utf-8") as f:
+            json.dump(list(processed_logs), f, indent=4)
+        logging.info("Processed log index saved successfully.")
     except Exception as e:
-        logging.error(f"Error reading log file {latest_file}: {e}")
+        logging.error(f"Error saving processed log index: {e}")
 
-    # Process inventory changes from Cargo, Backpack, and ShipLocker
-    summary_changes: Dict[str, Dict[str, int]] = {"Added": defaultdict(int), "Removed": defaultdict(int)}
-    for filename, category in [(cargo_file, "Cargo"), (backpack_file, "Backpack"), (ship_locker_file, "ShipLocker")]:
-        if os.path.exists(filename):
-            try:
-                with open(filename, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    current_materials: Dict[str, int] = {}
-                    if "Items" in data:
-                        for item in data["Items"]:
-                            current_materials[item["Name"]] = item["Count"]
-                    for material, count in current_materials.items():
-                        prev_count: int = previous_materials.get(category, {}).get(material, 0)
-                        if count > prev_count:
-                            diff = count - prev_count
-                            summary_changes["Added"][material] += diff
-                        elif count < prev_count:
-                            summary_changes["Removed"][material] += prev_count - count
-                    previous_materials[category] = current_materials
-            except json.JSONDecodeError:
-                logging.warning(f"Could not decode JSON from {filename}.")
-            except Exception as e:
-                logging.error(f"Error processing file {filename}: {e}")
 
-    # Log materials collected as individual events
-    for material, count in summary_changes["Added"].items():
-        session_activities.append(f"Collected {count}x {material}.")
+def update_commander_history() -> None:
+    """
+    Scans all log files in the log directory and builds a daily history of the Commander's activities.
+    It creates/updates a JSON file in the rag_data folder (commander_history.json) with daily event summaries.
+    A separate index file (commander_history_index.json) is maintained for processed log filenames.
+    Common events like FSSSignalDiscovered and ReceiveText are aggregated,
+    and non-essential events (e.g., Music) are ignored.
+    """
+    if not os.path.exists(rag_data_folder):
+        os.makedirs(rag_data_folder)
+    
+    # Load existing history; if none exists, initialize it.
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                history_data = json.load(f)
+            if not isinstance(history_data, dict):
+                logging.warning("Unexpected history format; reinitializing.")
+                history_data = {}
+        except Exception as e:
+            logging.error(f"Error loading commander history: {e}")
+            history_data = {}
+    else:
+        history_data = {}
+    
+    processed_logs = load_processed_index()
+    
+    # Temporary dictionary to aggregate events by day and event type.
+    daily_events = defaultdict(lambda: defaultdict(list))
+    
+    # Find all log files in the log directory.
+    all_log_files = glob.glob(os.path.join(log_dir, "Journal.*.log"))
+    new_logs = [lf for lf in all_log_files if lf not in processed_logs]
+    
+    if not new_logs:
+        logging.info("No new log files to process for commander history.")
+        return
+    
+    for logfile in new_logs:
+        logging.info(f"Processing log file: {logfile}")
+        try:
+            with open(logfile, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        event_data = json.loads(line)
+                    except Exception as e:
+                        logging.warning(f"Skipping invalid JSON line in {logfile}: {e}")
+                        continue
+                    
+                    timestamp_str = event_data.get("timestamp")
+                    if not timestamp_str:
+                        continue
+                    try:
+                        event_dt = datetime.fromisoformat(timestamp_str.replace("Z", ""))
+                    except Exception as e:
+                        logging.warning(f"Invalid timestamp format in {logfile}: {timestamp_str}")
+                        continue
+                    date_key = event_dt.strftime("%Y-%m-%d")
+                    
+                    event_type = event_data.get("event", "Unknown Event")
+                    # Skip non-essential events.
+                    if event_type in ["Music"]:
+                        continue
+                    
+                    description = process_event(event_data)
+                    if not description:
+                        continue
+                    
+                    # Aggregate common events.
+                    if event_type in ["FSSSignalDiscovered", "ReceiveText"]:
+                        daily_events[date_key][event_type].append(description)
+                    else:
+                        daily_events[date_key]["other"].append(description)
+            processed_logs.add(logfile)
+        except Exception as e:
+            logging.error(f"Error processing log file {logfile}: {e}")
+    
+    # Build the final summary for each day.
+    final_history = {}
+    for day, events_by_type in daily_events.items():
+        summary_lines = []
+        for event_type, descriptions in events_by_type.items():
+            if event_type in ["FSSSignalDiscovered", "ReceiveText"]:
+                count = len(descriptions)
+                example = descriptions[0] if descriptions else ""
+                summary_lines.append(f"{event_type}: {count} events (e.g., {example})")
+            else:
+                summary_lines.extend(descriptions)
+        final_history[day] = summary_lines
 
-    # Generate a summary text for inventory updates (optional redundancy)
-    summary_text: List[str] = []
-    for change_type, materials in summary_changes.items():
-        if materials:
-            changes = ", ".join([f"{count}x {mat}" for mat, count in materials.items()])
-            summary_text.append(f"{change_type}: {changes}")
-    if summary_text:
-        session_activities.append("Inventory updates: " + " | ".join(summary_text))
-
-    # Save updated material state and session log
-    save_previous_state(previous_materials)
-    session_data: Dict[str, Any] = {
-        "commander": cmdr_name,
-        "log_entry": latest_entry,
-        "ship_status": ship_status,
-        "activities": session_activities,
-        "event_timestamps": event_timestamps
-    }
-    save_session_log(session_data)
-
-    return cmdr_name, latest_entry, session_activities, ship_status, powerplay_faction, event_timestamps
+    # Update history data with new aggregated summaries.
+    history_data.update(final_history)
+    
+    try:
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(history_data, f, indent=4)
+        logging.info(f"Commander history updated successfully at {HISTORY_FILE}.")
+    except Exception as e:
+        logging.error(f"Error saving commander history to {HISTORY_FILE}: {e}")
+    
+    save_processed_index(processed_logs)
 
 
 if __name__ == "__main__":
-    cmdr, log_entry, activities, ship_status, powerplay, timestamps = parse_latest_log()
-    if log_entry:
-        logging.info(f"{cmdr}: {log_entry}")
-        logging.info(f"Ship Status: {ship_status}")
-        if activities:
-            logging.info("Session Activities:")
-            for activity in activities:
-                logging.info(f"- {activity}")
-        logging.info(f"Event Timestamps: {timestamps}")
-    else:
-        logging.info("No valid hyperspace jump or location data found!")
+    update_commander_history()
