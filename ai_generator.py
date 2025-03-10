@@ -4,12 +4,12 @@ import logging
 import requests
 import glob
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 
 # Set up logging configuration
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-# Load configuration with error handling
+# Load configuration
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
 try:
     with open(CONFIG_PATH, "r") as f:
@@ -21,9 +21,7 @@ except Exception as e:
 LM_STUDIO_API: str = config.get("lm_studio_api", "")
 MODEL_NAME: str = config.get("model_name", "")
 
-# Load knowledge from RAG folder instead of a single file
 RAG_DATA_FOLDER = os.path.join(os.path.dirname(__file__), "rag_data")
-# Initialize the knowledge base with expected keys
 knowledge_base: Dict[str, Any] = {
     "events": {},
     "materials": {},
@@ -32,6 +30,7 @@ knowledge_base: Dict[str, Any] = {
     "environments": {}
 }
 
+# Load JSON knowledge files into the knowledge base
 if os.path.exists(RAG_DATA_FOLDER):
     for filename in os.listdir(RAG_DATA_FOLDER):
         if filename.endswith(".json"):
@@ -40,19 +39,18 @@ if os.path.exists(RAG_DATA_FOLDER):
                 with open(filepath, "r", encoding="utf-8") as f:
                     data = json.load(f)
                     if isinstance(data, dict):
-                        # Merge keys that match our expected structure
                         for key, value in data.items():
-                            if key in knowledge_base:
+                            if key in knowledge_base and isinstance(value, (dict, list)):
                                 if isinstance(value, dict):
                                     knowledge_base[key].update(value)
-                                elif isinstance(value, list):
-                                    # If the knowledge base key is a list, extend it; otherwise, replace it.
+                                else:
                                     if isinstance(knowledge_base[key], list):
                                         knowledge_base[key].extend(value)
                                     else:
                                         knowledge_base[key] = value
+                            else:
+                                logging.warning(f"Ignored key in {filename}: {key}")
                     elif isinstance(data, list):
-                        # If the file contains a list, iterate over each item
                         for item in data:
                             if isinstance(item, dict):
                                 for key, value in item.items():
@@ -62,78 +60,53 @@ if os.path.exists(RAG_DATA_FOLDER):
                                         elif isinstance(value, list):
                                             if isinstance(knowledge_base[key], list):
                                                 knowledge_base[key].extend(value)
-                                            else:
-                                                knowledge_base[key] = value
-                            else:
-                                logging.warning(f"List item in {filename} is not a dictionary, skipping.")
                     else:
-                        logging.warning(f"File {filename} does not contain a dictionary or list, skipping.")
+                        logging.warning(f"Invalid structure in {filename}")
             except Exception as e:
-                logging.error(f"Error loading {filename}: {e}")
+                logging.error(f"Failed to load {filename}: {e}")
 else:
     logging.warning(f"RAG folder not found at {RAG_DATA_FOLDER}. Using empty knowledge base.")
 
 def extract_json_string(text: str) -> str:
-    """
-    Attempts to extract a JSON substring from the given text.
-    It removes markdown code fences if present and returns the substring between
-    the first '{' and the last '}'.
-    """
     text = text.strip()
-    # Remove markdown code fences if they exist
     if text.startswith("```"):
         text = text.strip("`").strip()
-    # Find the boundaries of the JSON content
     start = text.find('{')
     end = text.rfind('}')
-    if start != -1 and end != -1 and end > start:
-        return text[start:end+1]
-    return text
+    return text[start:end+1] if start != -1 and end != -1 and end > start else text
 
 def retrieve_knowledge(session_activities: List[str]) -> str:
-    """
-    Retrieves relevant Elite Dangerous knowledge snippets based on session activities.
-    Performs substring matches for events, materials, and terms.
-    """
-    knowledge_snippets: List[str] = []
-    
+    snippets: List[str] = []
+
     for activity in session_activities:
-        # Match events
-        for event, description in knowledge_base.get("events", {}).items():
+        for event, desc in knowledge_base.get("events", {}).items():
             if event in activity:
-                knowledge_snippets.append(f"- {event}: {description}")
-        
-        # Match materials; assumes each material string has a format like "MaterialName - Description"
-        for category, materials in knowledge_base.get("materials", {}).items():
+                snippets.append(f"- {event}: {desc}")
+
+        for cat, materials in knowledge_base.get("materials", {}).items():
             if isinstance(materials, list):
-                for material in materials:
-                    material_name = material.split(" - ")[0]
-                    if material_name in activity:
-                        knowledge_snippets.append(f"- {material}")
-            else:
-                logging.warning(f"Unexpected format for materials in category '{category}'.")
-        
-        # Match terms
+                for mat in materials:
+                    if isinstance(mat, str):
+                        name = mat.split(" - ")[0]
+                        if name in activity:
+                            snippets.append(f"- {mat}")
+
         for term, definition in knowledge_base.get("terms", {}).items():
             if term in activity:
-                knowledge_snippets.append(f"- {term}: {definition}")
+                snippets.append(f"- {term}: {definition}")
 
-    return "\n".join(knowledge_snippets) if knowledge_snippets else "No additional knowledge needed."
+    return "\n".join(snippets) if snippets else "No additional knowledge needed."
 
 def build_prompt(cmdr_name: str, log_entry: str, session_activities: List[str], retrieved_knowledge: str) -> str:
-    """
-    Constructs the prompt template for LM Studio using the log data, session activities,
-    and the retrieved knowledge.
-    """
-    activities_text = ", ".join(session_activities)
-    prompt = f"""
+    activity_text = ", ".join(session_activities)
+    return f"""
 [SYSTEM MESSAGE: You are an AI that STRICTLY formats logs in Elite Dangerous. YOU CANNOT GENERATE NEW CONTENT.]
 
 === Commander’s Log ===
 {log_entry}
 
 === Session Activities ===
-{activities_text}
+{activity_text}
 
 === Knowledge Reference ===
 {retrieved_knowledge}
@@ -162,14 +135,9 @@ def build_prompt(cmdr_name: str, log_entry: str, session_activities: List[str], 
 - ONLY format the provided log data into the above JSON format.
 
 Now, strictly return the log in JSON format. DO NOT ADD ANY ADDITIONAL CONTENT.
-"""
-    return prompt.strip()
+""".strip()
 
 def enforce_strict_rules(log_json: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Enforces that the output strictly adheres to the required format.
-    For example, if 'notable_events' is empty or missing, it will be replaced with the placeholder.
-    """
     placeholders = {
         "star_system": "[REAL STAR SYSTEM FROM LOG]",
         "location": "[REAL LOCATION FROM LOG]",
@@ -178,33 +146,24 @@ def enforce_strict_rules(log_json: Dict[str, Any]) -> Dict[str, Any]:
             "fuel": "[FUEL STATUS IF LOGGED]",
             "modules": "[MODULE STATUS IF LOGGED]"
         },
-        "activities": [
-            "[REAL EVENTS FROM SESSION LOG]"
-        ],
-        "notable_events": [
-            "[Bounty, mining success, exobiology discovery, combat, trading]"
-        ]
+        "activities": ["[REAL EVENTS FROM SESSION LOG]"],
+        "notable_events": ["[Bounty, mining success, exobiology discovery, combat, trading]"]
     }
-    
+
     for key, placeholder in placeholders.items():
-        if key not in log_json or (isinstance(log_json[key], list) and not log_json[key]):
+        if key not in log_json or not log_json[key]:
             log_json[key] = placeholder
         elif key == "ship_status":
-            for sub_key, sub_placeholder in placeholder.items():
+            for sub_key, sub_val in placeholder.items():
                 if sub_key not in log_json[key] or not log_json[key][sub_key]:
-                    log_json[key][sub_key] = sub_placeholder
+                    log_json[key][sub_key] = sub_val
 
     return log_json
 
 def generate_log(cmdr_name: str, log_entry: str, session_activities: List[str]) -> str:
-    """
-    Generates a Commander’s Log by formatting the log data using LM Studio API.
-    The function constructs a prompt with log entry, session activities, and relevant knowledge.
-    Returns the JSON-formatted log as a string.
-    """
-    retrieved_knowledge: str = retrieve_knowledge(session_activities)
-    prompt: str = build_prompt(cmdr_name, log_entry, session_activities, retrieved_knowledge)
-    
+    knowledge = retrieve_knowledge(session_activities)
+    prompt = build_prompt(cmdr_name, log_entry, session_activities, knowledge)
+
     try:
         response = requests.post(
             LM_STUDIO_API,
@@ -215,75 +174,51 @@ def generate_log(cmdr_name: str, log_entry: str, session_activities: List[str]) 
                 "temperature": 0.0,
                 "top_p": 0.1,
             },
-            timeout=20
+            timeout=90
         )
         response.raise_for_status()
-        response_data = response.json()
-        log_text: str = response_data["choices"][0]["text"]
-        logging.info("Log generated successfully.")
-        
-        cleaned_log_text = extract_json_string(log_text)
-        
-        try:
-            log_json = json.loads(cleaned_log_text)
-        except json.JSONDecodeError as json_err:
-            logging.error(f"Error parsing generated log as JSON: {json_err}")
-            return "Error: Unable to generate Commander’s Log."
-        
-        strict_log = enforce_strict_rules(log_json)
-        return json.dumps(strict_log, indent=2)
-    
-    except requests.exceptions.RequestException as req_err:
-        logging.error(f"Request error while generating log: {req_err}")
-    except (KeyError, ValueError, json.JSONDecodeError) as parse_err:
-        logging.error(f"Error parsing response: {parse_err}")
-    
-    return "Error: Unable to generate Commander’s Log."
+        log_text = response.json()["choices"][0]["text"]
+        cleaned = extract_json_string(log_text)
+        log_json = json.loads(cleaned)
+        return json.dumps(enforce_strict_rules(log_json), indent=2)
+    except Exception as e:
+        logging.error(f"Error generating log: {e}")
+        return "Error: Unable to generate Commander’s Log."
 
-def get_latest_log() -> (str, str, List[str]):
-    """
-    Retrieves the most recent Commander log from the 'rag_data/commander_logs' folder.
-    Extracts the commander name from the header and collects session activities from bullet points.
-    Returns a tuple of (cmdr_name, log_entry, session_activities).
-    """
+def get_latest_log() -> Tuple[str, str, List[str]]:
     logs_dir = os.path.join(os.path.dirname(__file__), "rag_data", "commander_logs")
     markdown_files = glob.glob(os.path.join(logs_dir, "*.md"))
-    
     if not markdown_files:
         logging.error("No commander log files found.")
         return "", "", []
-    
-    # Select the latest file based on modification time
+
     latest_file = max(markdown_files, key=os.path.getmtime)
     with open(latest_file, "r", encoding="utf-8") as f:
         content = f.read()
-    
-    # Assume first line contains the commander header: "# Commander <NAME> - Log <DATE>"
+
     first_line = content.splitlines()[0]
     cmdr_name = "Unknown Commander"
     if first_line.startswith("# Commander"):
         try:
-            # Example header: "# Commander TOADIE MUDGUTS - Log 2025-03-09"
             parts = first_line.split()
             if len(parts) >= 3:
                 cmdr_name = parts[2]
         except Exception as e:
             logging.warning(f"Could not parse commander name: {e}")
-    
-    # Extract session activities from bullet points
-    session_activities = []
-    for line in content.splitlines():
-        if line.strip().startswith("- "):
-            # Remove bullet and extra whitespace
-            session_activities.append(line.strip()[2:])
-    
+
+    session_activities = [
+        line.strip()[2:]
+        for line in content.splitlines()
+        if line.strip().startswith("- ")
+    ]
+
     return cmdr_name, content, session_activities
 
 if __name__ == "__main__":
     cmdr_name, log_entry, session_activities = get_latest_log()
     if log_entry:
-        enhanced_log: str = generate_log(cmdr_name, log_entry, session_activities)
+        enhanced_log = generate_log(cmdr_name, log_entry, session_activities)
         print(f"\n📖 {cmdr_name}’s Enhanced Commander’s Log:\n")
         print(enhanced_log)
     else:
-        print("No valid commander log found!")
+        print("No valid commander log found.")
