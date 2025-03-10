@@ -1,0 +1,42 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-01-30",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **0 Encoded**, **0 Manufactured**.",
+      "Gathered materials: **0 Raw**, **0 Encoded**, **0 Manufactured**.",
+      "Gathered materials: **0 Raw**, **0 Encoded**, **0 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Asellus Primus**, **Asellus 2**.",
+      "Current location: **Ross 640**, **Orbital Stockade N-65**.",
+      "Current location: **Asellus Primus**, **Asellus 2**."
+    ],
+    "Docking": [
+      "Undocked from **Baker's Prospect**.",
+      "Docked at **Azeban City** in **Eranin**.",
+      "Undocked from **Azeban City**.",
+      "Docked at **Dahan Gateway** in **Dahan**.",
+      "Undocked from **Dahan Gateway**.",
+      "Docked at **Azeban City** in **Eranin**.",
+      "Undocked from **Azeban City**.",
+      "Undocked from **Orbital Stockade N-65**.",
+      "Undocked from **Baker's Prospect**."
+    ],
+    "Travel": [
+      "Jumped to **Eranin**.",
+      "Jumped to **Dahan**.",
+      "Jumped to **Eranin**.",
+      "Jumped to **i Bootis**.",
+      "Jumped to **Eranin**.",
+      "Jumped to **Dahan**.",
+      "Jumped to **Morgor**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Courier**.",
+      "Completed mission: **Mission_Courier_name**, earning **44,956 Cr**.",
+      "Accepted mission: **Mission_Collect_Industrial**.",
+      "Accepted mission: **Mission_Courier**."
+    ]
+  }
+}

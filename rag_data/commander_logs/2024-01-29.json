@@ -1,0 +1,22 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-01-29",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **0 Encoded**, **0 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Asellus Primus**, **Asellus 2**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Courier**."
+    ],
+    "Docking": [
+      "Undocked from **Baker's Prospect**."
+    ],
+    "Travel": [
+      "Jumped to **Eranin**.",
+      "Jumped to **Styx**."
+    ]
+  }
+}

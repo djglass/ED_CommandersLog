@@ -1,0 +1,24 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-14",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Arietis Sector YU-X b1-4**, **Arietis Sector YU-X b1-4 B 6**.",
+      "Current location: **Hyades Sector YU-Y d76**, **Hyades Sector YU-Y d76 1 b**.",
+      "Current location: **Hyades Sector YU-Y d76**, **Hyades Sector YU-Y d76 1 c**."
+    ],
+    "Travel": [
+      "Jumped to **Arietis Sector UT-A c11**.",
+      "Jumped to **Hyades Sector YU-Y d76**."
+    ],
+    "Docking": [
+      "Docked at **HZF-N1H** in **Hyades Sector YU-Y d76**.",
+      "Undocked from **HZF-N1H**."
+    ]
+  }
+}

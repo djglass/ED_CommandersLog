@@ -1,0 +1,51 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-12-31",
+  "categories": {
+    "Docking": [
+      "Undocked from **Bastien Mineralogic Enterprise**.",
+      "Docked at **Hully Botanical Biosphere** in **Tangkan**.",
+      "Undocked from **Hully Botanical Biosphere**.",
+      "Docked at **Hully Botanical Biosphere** in **Tangkan**.",
+      "Docked at **Alcala Retreat** in **Tangkan**.",
+      "Undocked from **Alcala Retreat**.",
+      "Docked at **Hawkins Horticultural Range** in **Tangkan**.",
+      "Undocked from **Hawkins Horticultural Range**.",
+      "Docked at **Alcala Retreat** in **Tangkan**.",
+      "Undocked from **Alcala Retreat**.",
+      "Docked at **Jones Dock** in **Asgara**.",
+      "Undocked from **Jones Dock**.",
+      "Docked at **Sohl Orbital** in **Semayah**.",
+      "Undocked from **Sohl Orbital**.",
+      "Docked at **Hawkins Horticultural Range** in **Tangkan**.",
+      "Undocked from **Hawkins Horticultural Range**.",
+      "Docked at **Alcala Retreat** in **Tangkan**.",
+      "Undocked from **Alcala Retreat**.",
+      "Docked at **Hawkins Horticultural Range** in **Tangkan**.",
+      "Undocked from **Hawkins Horticultural Range**.",
+      "Docked at **Alcala Retreat** in **Tangkan**.",
+      "Undocked from **Alcala Retreat**.",
+      "Docked at **Hawkins Horticultural Range** in **Tangkan**."
+    ],
+    "Location": [
+      "Current location: **Tangkan**, **Tangkan A 3**.",
+      "Current location: **Tangkan**, **Tangkan B 1**."
+    ],
+    "Travel": [
+      "Jumped to **Asgara**.",
+      "Jumped to **Semayah**.",
+      "Jumped to **Tangkan**."
+    ],
+    "Materials": [
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_OnFoot_Assassination_MB**.",
+      "Completed mission: **Mission_OnFoot_Assassination_MB_name**, earning **17,617 Cr**.",
+      "Accepted mission: **Mission_OnFoot_Assassination_MB**.",
+      "Accepted mission: **Mission_OnFoot_Assassination_MB**.",
+      "Accepted mission: **Mission_OnFoot_Onslaught_Offline_MB**.",
+      "Accepted mission: **Mission_OnFoot_Onslaught_Offline_MB**."
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-10",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Acurus**, **Acurus A 3**.",
+      "Current location: **Col 285 Sector GK-K b23-8**, **Col 285 Sector GK-K b23-8 C 1**."
+    ],
+    "Docking": [
+      "Docked at **Friesner Orbital** in **Acurus**.",
+      "Undocked from **Friesner Orbital**.",
+      "Docked at **Cartier Dock** in **Kwatee**.",
+      "Undocked from **Cartier Dock**.",
+      "Docked at **Herreshoff Gateway** in **Kwatee**."
+    ],
+    "Travel": [
+      "Jumped to **Col 285 Sector TW-P b20-6**.",
+      "Jumped to **Col 285 Sector TW-P b20-0**.",
+      "Jumped to **Col 285 Sector JY-H c10-4**.",
+      "Jumped to **Col 285 Sector JY-H c10-27**.",
+      "Jumped to **Col 285 Sector JY-H c10-22**.",
+      "Jumped to **Col 285 Sector UR-P b20-10**.",
+      "Jumped to **Col 285 Sector YX-N b21-6**.",
+      "Jumped to **Col 285 Sector YX-N b21-12**.",
+      "Jumped to **Col 285 Sector NE-G c11-29**.",
+      "Jumped to **Col 285 Sector GK-K b23-0**.",
+      "Jumped to **Col 285 Sector GK-K b23-8**.",
+      "Jumped to **Col 285 Sector KQ-I b24-7**.",
+      "Jumped to **Col 285 Sector PW-G b25-11**.",
+      "Jumped to **Col 285 Sector VQ-C c13-5**.",
+      "Jumped to **Col 285 Sector XK-O d6-85**.",
+      "Jumped to **Col 285 Sector QP-L a51-3**.",
+      "Jumped to **Col 285 Sector VV-J a52-2**.",
+      "Jumped to **Col 285 Sector CX-H a53-4**.",
+      "Jumped to **Col 285 Sector ID-G a54-2**.",
+      "Jumped to **Col 285 Sector FX-H a53-0**.",
+      "Jumped to **Col 285 Sector YK-L a51-6**.",
+      "Jumped to **HIP 93623**.",
+      "Jumped to **HIP 94129**.",
+      "Jumped to **Kwatee**."
+    ]
+  }
+}

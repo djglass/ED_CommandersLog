@@ -1,0 +1,33 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-11",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Kwatee**, **Herreshoff Gateway**.",
+      "Current location: **Kwatee**, **Kwatee C 6**.",
+      "Current location: **Bridge**, **Bridge 1**.",
+      "Current location: **Bridge**, **Bridge 1**."
+    ],
+    "Docking": [
+      "Undocked from **Herreshoff Gateway**.",
+      "Docked at **Midgeley Depot** in **Upan**.",
+      "Undocked from **Midgeley Depot**."
+    ],
+    "Travel": [
+      "Jumped to **Wangana**.",
+      "Jumped to **Upan**.",
+      "Jumped to **Capricorni Sector LS-T b3-2**.",
+      "Jumped to **Bridge**.",
+      "Jumped to **Capricorni Sector ER-V b2-5**.",
+      "Jumped to **Capricorni Sector JX-T b3-2**.",
+      "Jumped to **Col 285 Sector VG-I b24-0**.",
+      "Jumped to **Kwatee**."
+    ]
+  }
+}

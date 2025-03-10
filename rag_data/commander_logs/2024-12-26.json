@@ -1,0 +1,74 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-12-26",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **42 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **42 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **42 Encoded**, **62 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **LP 906-9**, **al-Din Enterprise**.",
+      "Current location: **LHS 317**, **Northrop Port**.",
+      "Current location: **LHS 317**, **LHS 317 1 B Ring**."
+    ],
+    "Docking": [
+      "Undocked from **al-Din Enterprise**.",
+      "Docked at **Northrop Port** in **LHS 317**.",
+      "Undocked from **Northrop Port**.",
+      "Docked at **Smith Hub** in **LP 908-11**.",
+      "Undocked from **Smith Hub**.",
+      "Docked at **So-yeon City** in **LP 908-11**.",
+      "Undocked from **So-yeon City**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**."
+    ],
+    "Travel": [
+      "Jumped to **LP 908-11**.",
+      "Jumped to **LHS 317**.",
+      "Jumped to **LP 908-11**.",
+      "Jumped to **Nuenets**.",
+      "Jumped to **Shinrarta Dezhra**."
+    ],
+    "Combat": [
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**."
+    ],
+    "Missions": [
+      "Completed mission: **Mission_MassacreWing_name**, earning **10,855,116 Cr**.",
+      "Completed mission: **Mission_MassacreWing_name**, earning **8,179,845 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **1,482,436 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **340,574 Cr**.",
+      "Completed mission: **Mission_MassacreWing_name**, earning **11,863,957 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **345,629 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **1,764,816 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **2,284,465 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **1,363,844 Cr**.",
+      "Completed mission: **Mission_MassacreWing_name**, earning **12,655,994 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **32,112 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **2,304,542 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **2,002,276 Cr**.",
+      "Completed mission: **Mission_Assassinate_name**, earning **1,500,704 Cr**.",
+      "Completed mission: **Mission_Massacre_name**, earning **12,299,096 Cr**.",
+      "Completed mission: **Mission_Massacre_name**, earning **11,420,779 Cr**.",
+      "Accepted mission: **Mission_AltruismCredits**.",
+      "Completed mission: **Mission_AltruismCredits_name**, earning **0 Cr**."
+    ]
+  }
+}

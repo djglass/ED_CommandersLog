@@ -29,7 +29,6 @@ if os.path.exists(INDEX_FILE):
 else:
     processed_logs = set()
 
-
 def extract_events(logfile):
     """Extracts key events from a single Elite Dangerous log file and groups them by date."""
     daily_events = defaultdict(lambda: defaultdict(list))
@@ -109,26 +108,36 @@ def extract_events(logfile):
 
     return daily_events
 
-
 def save_markdown_summaries(daily_events):
-    """Saves daily events into Markdown files."""
+    """Saves daily events into Markdown and JSON files."""
     for date, events in daily_events.items():
+        # Save Markdown log
         md_file = os.path.join(OUTPUT_DIR, f"{date}.md")
-
         with open(md_file, "w", encoding="utf-8") as f:
             f.write(f"# Commander TOADIE MUDGUTS - Log {date}\n\n")
-
             for category, entries in events.items():
                 f.write(f"## {category}\n")
                 for entry in entries:
                     f.write(f"- {entry}\n")
                 f.write("\n")
+        logging.info(f"📝 Saved daily Markdown log: {md_file}")
 
-        logging.info(f"Saved daily log: {md_file}")
-
+        # Save JSON log
+        json_file = os.path.join(OUTPUT_DIR, f"{date}.json")
+        json_data = {
+            "commander": "TOADIE MUDGUTS",
+            "date": date,
+            "categories": events
+        }
+        try:
+            with open(json_file, "w", encoding="utf-8") as f:
+                json.dump(json_data, f, indent=2)
+            logging.info(f"📦 Saved daily JSON log: {json_file}")
+        except Exception as e:
+            logging.error(f"❌ Failed to write JSON log for {date}: {e}")
 
 def main():
-    """Scans all logs, extracts summaries, and writes Markdown files."""
+    """Scans all logs, extracts summaries, and writes Markdown and JSON files."""
     all_log_files = glob.glob(os.path.join(LOG_DIR, "Journal.*.log"))
     new_logs = [lf for lf in all_log_files if lf not in processed_logs]
 
@@ -155,6 +164,6 @@ def main():
 
     logging.info("Processing complete.")
 
-
 if __name__ == "__main__":
     main()
+    

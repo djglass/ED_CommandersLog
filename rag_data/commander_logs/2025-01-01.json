@@ -1,0 +1,44 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2025-01-01",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Tangkan**, **Tangkan B 1**.",
+      "Current location: **Tangkan**, **Tangkan B 1**.",
+      "Current location: **Tangkan**, **Tangkan B 1**.",
+      "Current location: **Tangkan**, **Tangkan B 1**.",
+      "Current location: **Smethells 1**, **Smethells 1 1 a**."
+    ],
+    "Combat": [
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**."
+    ],
+    "Docking": [
+      "Docked at **Faucher Nutrition Farm** in **Tangkan**.",
+      "Undocked from **Faucher Nutrition Farm**.",
+      "Docked at **Dzsejt Manufacturing Depot** in **Smethells 1**.",
+      "Docked at **Dzsejt Manufacturing Depot** in **Smethells 1**.",
+      "Undocked from **Dzsejt Manufacturing Depot**.",
+      "Docked at **Kadenyuk Refinery** in **Smethells 1**.",
+      "Undocked from **Kadenyuk Refinery**.",
+      "Docked at **Kadenyuk Refinery** in **Smethells 1**."
+    ],
+    "Travel": [
+      "Jumped to **Smethells 1**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_OnFoot_Assassination_MB**.",
+      "Completed mission: **Mission_OnFoot_Assassination_MB_name**, earning **13,643 Cr**."
+    ]
+  }
+}

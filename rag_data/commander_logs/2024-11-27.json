@@ -1,0 +1,35 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-11-27",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **29 Encoded**, **56 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **56 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Desy**, **Morten's Paradise**.",
+      "Current location: **Desy**, **Morten's Paradise**."
+    ],
+    "Docking": [
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Jaques Station** in **Colonia**."
+    ],
+    "Missions": [
+      "Completed mission: **Mission_Massacre_Conflict_CivilWar_name**, earning **894,183 Cr**.",
+      "Completed mission: **Mission_Massacre_Conflict_CivilWar_name**, earning **789,270 Cr**."
+    ],
+    "Travel": [
+      "Jumped to **Colonia**."
+    ]
+  }
+}

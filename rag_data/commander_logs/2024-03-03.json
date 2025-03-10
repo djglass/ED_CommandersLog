@@ -1,0 +1,20 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-03-03",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **12 Raw**, **25 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **12 Raw**, **25 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **12 Raw**, **25 Encoded**, **40 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Summerland**, **Henry O'Hare's Hangar**.",
+      "Current location: **Summerland**, **Henry O'Hare's Hangar**.",
+      "Current location: **Summerland**, **Henry O'Hare's Hangar**."
+    ],
+    "Docking": [
+      "Undocked from **Henry O'Hare's Hangar**.",
+      "Docked at **Henry O'Hare's Hangar** in **Summerland**."
+    ]
+  }
+}

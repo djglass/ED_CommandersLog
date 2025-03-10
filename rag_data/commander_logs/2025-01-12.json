@@ -1,0 +1,80 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2025-01-12",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Omicron Capricorni B**, **Martin Enterprise**.",
+      "Current location: **Shinrarta Dezhra**, **Jameson Memorial**.",
+      "Current location: **Shinrarta Dezhra**, **Jameson Memorial**."
+    ],
+    "Docking": [
+      "Undocked from **Martin Enterprise**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Docked at **Mars High** in **Sol**.",
+      "Undocked from **Mars High**.",
+      "Docked at **Davis Terminal** in **Duamta**.",
+      "Undocked from **Davis Terminal**.",
+      "Docked at **Mars High** in **Sol**.",
+      "Undocked from **Mars High**.",
+      "Docked at **Miller Depot** in **Barnard's Star**.",
+      "Undocked from **Miller Depot**.",
+      "Docked at **Jones Orbital** in **Wolf 1481**.",
+      "Undocked from **Jones Orbital**.",
+      "Docked at **Mars High** in **Sol**.",
+      "Undocked from **Mars High**.",
+      "Docked at **Ashby City** in **Luyten's Star**.",
+      "Undocked from **Ashby City**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Undocked from **Jameson Memorial**."
+    ],
+    "Travel": [
+      "Jumped to **Wulwula**.",
+      "Jumped to **Alrai Sector PN-K a8-1**.",
+      "Jumped to **LTT 7499**.",
+      "Jumped to **LTT 7361**.",
+      "Jumped to **Crucis Sector JC-V b2-3**.",
+      "Jumped to **Arro Naga**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **LHS 397**.",
+      "Jumped to **Sol**.",
+      "Jumped to **Duamta**.",
+      "Jumped to **Sol**.",
+      "Jumped to **Barnard's Star**.",
+      "Jumped to **Wolf 1481**.",
+      "Jumped to **Sol**.",
+      "Jumped to **Luyten's Star**.",
+      "Jumped to **LHS 2552**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **Tascheter Sector LH-V b2-1**.",
+      "Jumped to **Hyades Sector UA-B a15-2**.",
+      "Jumped to **Hyades Sector OY-O a7-1**.",
+      "Jumped to **Hyades Sector SI-B b6**.",
+      "Jumped to **HIP 22460**.",
+      "Jumped to **HIP 22460**.",
+      "Jumped to **Pemoeri**.",
+      "Jumped to **Oresqu**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Collect**.",
+      "Completed mission: **Mission_Collect_name**, earning **819,425 Cr**.",
+      "Accepted mission: **Mission_Courier_Service**.",
+      "Completed mission: **Mission_Courier_Service_name**, earning **13,013 Cr**.",
+      "Accepted mission: **Mission_Courier**.",
+      "Completed mission: **Mission_Courier_name**, earning **45,000 Cr**.",
+      "Accepted mission: **Mission_Courier_RankFed**.",
+      "Completed mission: **Mission_Courier_RankFed_name**, earning **12,823 Cr**."
+    ],
+    "Trade": [
+      "Purchased **32x tea**."
+    ],
+    "Combat": [
+      "Claimed a bounty of **0 Cr**."
+    ]
+  }
+}

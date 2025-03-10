@@ -1,0 +1,82 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-12-29",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **LTT 16301**, **LTT 16301 1**.",
+      "Current location: **LTT 16301**, **Ostrander Landing**.",
+      "Current location: **LTT 16301**, **Ostrander Landing**.",
+      "Current location: **Col 285 Sector IT-W b16-2**, **The Heart of Orion**.",
+      "Current location: **V886 Centauri**, **Tanner City**.",
+      "Current location: **V886 Centauri**, **Tanner City**.",
+      "Current location: **Eta Crucis**, **Eta Crucis AB 1 b**.",
+      "Current location: **Eta Crucis**, **Eta Crucis AB 1 b**.",
+      "Current location: **SPF-LF 1**, **The Pillar of Fortitude**.",
+      "Current location: **Anyanwu**, **Anyanwu 5 a**.",
+      "Current location: **Anyanwu**, **Anyanwu 5 a**.",
+      "Current location: **Anyanwu**, **Anyanwu 5 a**."
+    ],
+    "Docking": [
+      "Undocked from **Ostrander Landing**.",
+      "Docked at **Hirano Prospecting Territory** in **LTT 16301**.",
+      "Docked at **Hirano Prospecting Territory** in **LTT 16301**.",
+      "Undocked from **Hirano Prospecting Territory**.",
+      "Undocked from **Ostrander Landing**.",
+      "Docked at **Sauer Mining Facility** in **Herlio**.",
+      "Undocked from **The Heart of Orion**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Docked at **Tanner City** in **V886 Centauri**.",
+      "Undocked from **Tanner City**.",
+      "Docked at **Tanner City** in **V886 Centauri**.",
+      "Undocked from **Tanner City**.",
+      "Docked at **Braines Cultivation Biome** in **Eta Crucis**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Docked at **Lemaire Horticultural Biome** in **LFT 926**.",
+      "Undocked from **The Pillar of Fortitude**.",
+      "Docked at **Park Analysis Forum** in **Anyanwu**.",
+      "Docked at **Park Analysis Forum** in **Anyanwu**.",
+      "Undocked from **Park Analysis Forum**.",
+      "Docked at **Kotsubinsky Genetics Lab** in **Anyanwu**."
+    ],
+    "Travel": [
+      "Jumped to **Herlio**.",
+      "Jumped to **G 188-9**.",
+      "Jumped to **LHS 397**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **V886 Centauri**.",
+      "Jumped to **LHS 332**.",
+      "Jumped to **V886 Centauri**.",
+      "Jumped to **Eta Crucis**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **LFT 926**.",
+      "Jumped to **Anyanwu**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Assassinate_RankEmp**.",
+      "Accepted mission: **Mission_OnFoot_Onslaught_MB**.",
+      "Completed mission: **Mission_Assassinate_RankEmp_name**, earning **4,454,466 Cr**.",
+      "Accepted mission: **Mission_OnFoot_Hack_Upload_Covert_MB**."
+    ],
+    "Combat": [
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**."
+    ]
+  }
+}

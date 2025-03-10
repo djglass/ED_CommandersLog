@@ -1,0 +1,63 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-12-11",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **41 Encoded**, **59 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **59 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **WISE 0855-0714**, **Yamazaki Landing**.",
+      "Current location: **Alpha Centauri**, **al-Din Prospect**.",
+      "Current location: **Alpha Centauri**, **al-Din Prospect**."
+    ],
+    "Docking": [
+      "Undocked from **Yamazaki Landing**.",
+      "Docked at **Miller Depot** in **Barnard's Star**.",
+      "Undocked from **Miller Depot**.",
+      "Docked at **al-Din Prospect** in **Alpha Centauri**.",
+      "Undocked from **al-Din Prospect**.",
+      "Docked at **al-Din Prospect** in **Alpha Centauri**.",
+      "Undocked from **al-Din Prospect**.",
+      "Docked at **al-Din Prospect** in **Alpha Centauri**.",
+      "Undocked from **al-Din Prospect**.",
+      "Docked at **al-Din Prospect** in **Alpha Centauri**.",
+      "Undocked from **al-Din Prospect**.",
+      "Docked at **al-Din Prospect** in **Alpha Centauri**.",
+      "Undocked from **al-Din Prospect**.",
+      "Undocked from **al-Din Prospect**.",
+      "Docked at **al-Din Prospect** in **Alpha Centauri**.",
+      "Undocked from **al-Din Prospect**.",
+      "Docked at **Rescue Ship Cornwallis** in **V886 Centauri**.",
+      "Undocked from **Rescue Ship Cornwallis**.",
+      "Docked at **T2L-12H** in **70 Ophiuchi**.",
+      "Undocked from **T2L-12H**.",
+      "Docked at **GHJ-WQN** in **Luyten's Star**.",
+      "Undocked from **GHJ-WQN**.",
+      "Docked at **Spirit of Laelaps** in **V886 Centauri**."
+    ],
+    "Travel": [
+      "Jumped to **WISE 0855-0714**.",
+      "Jumped to **Alpha Centauri**.",
+      "Jumped to **Barnard's Star**.",
+      "Jumped to **Barnard's Star**.",
+      "Jumped to **Alpha Centauri**.",
+      "Jumped to **LHS 337**.",
+      "Jumped to **Core Sys Sector DL-Y d133**.",
+      "Jumped to **V886 Centauri**.",
+      "Jumped to **Core Sys Sector ON-T b3-3**.",
+      "Jumped to **KX Librae**.",
+      "Jumped to **70 Ophiuchi**.",
+      "Jumped to **70 Ophiuchi**.",
+      "Jumped to **Sol**.",
+      "Jumped to **Luyten's Star**.",
+      "Jumped to **LTT 3572**.",
+      "Jumped to **LHS 40**.",
+      "Jumped to **V886 Centauri**."
+    ],
+    "Trade": [
+      "Purchased **32x metaalloys**.",
+      "Purchased **24x reinforcedmountingplate**."
+    ]
+  }
+}

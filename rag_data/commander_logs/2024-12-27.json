@@ -1,0 +1,83 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-12-27",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **42 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **42 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **42 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Shinrarta Dezhra**, **Jameson Memorial**.",
+      "Current location: **Shinrarta Dezhra**, **Jameson Memorial**.",
+      "Current location: **LHS 317**, **LHS 317 8 e**.",
+      "Current location: **Crucis Sector EQ-Y b4**, **The Champion of Piety**.",
+      "Current location: **SPF-LF 1**, **The Pillar of Fortitude**.",
+      "Current location: **Col 285 Sector IT-W b16-2**, **The Heart of Orion**.",
+      "Current location: **Col 285 Sector IT-W b16-2**, **The Heart of Orion**."
+    ],
+    "Docking": [
+      "Undocked from **Jameson Memorial**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Docked at **Peters Depot** in **Bevan's Hope**.",
+      "Undocked from **Peters Depot**.",
+      "Docked at **Northrop Port** in **LHS 317**.",
+      "Undocked from **Northrop Port**.",
+      "Docked at **Jun Terminal** in **LHS 317**.",
+      "Undocked from **Jun Terminal**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Undocked from **The Champion of Piety**.",
+      "Docked at **Cooper Landing** in **Eravarenth**.",
+      "Undocked from **Cooper Landing**.",
+      "Docked at **Northrop Port** in **LHS 317**.",
+      "Undocked from **The Pillar of Fortitude**.",
+      "Docked at **Northrop Port** in **LHS 317**.",
+      "Undocked from **Northrop Port**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**.",
+      "Docked at **Long Sight Base** in **Khun**.",
+      "Undocked from **Long Sight Base**.",
+      "Docked at **Cook Prospect** in **Jetes**.",
+      "Undocked from **Cook Prospect**.",
+      "Docked at **Taylor Point** in **Jetes**.",
+      "Undocked from **Taylor Point**.",
+      "Docked at **Schwarz Metallurgic Enterprise** in **Jetes**."
+    ],
+    "Travel": [
+      "Jumped to **Bevan's Hope**.",
+      "Jumped to **LHS 317**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **Eravarenth**.",
+      "Jumped to **Sosong**.",
+      "Jumped to **Eravarenth**.",
+      "Jumped to **LHS 317**.",
+      "Jumped to **Puppis Sector FW-W c1-22**.",
+      "Jumped to **LHS 317**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **LTT 5455**.",
+      "Jumped to **Guangul**.",
+      "Jumped to **LTT 18506**.",
+      "Jumped to **Cephei Sector KC-V b2-0**.",
+      "Jumped to **Cephei Sector EW-W b1-3**.",
+      "Jumped to **Khun**.",
+      "Jumped to **Jetes**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_AltruismCredits**.",
+      "Completed mission: **Mission_AltruismCredits_name**, earning **0 Cr**.",
+      "Accepted mission: **Mission_Disable_BLOPS_CivilWar**.",
+      "Accepted mission: **Mission_Disable_BLOPS_CivilWar**.",
+      "Accepted mission: **Mission_Disable_BLOPS_CivilWar**.",
+      "Completed mission: **Mission_Disable_BLOPS_CivilWar_name**, earning **68,966 Cr**.",
+      "Completed mission: **Mission_Disable_BLOPS_CivilWar_name**, earning **217,263 Cr**."
+    ],
+    "Combat": [
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**.",
+      "Claimed a bounty of **0 Cr**."
+    ]
+  }
+}

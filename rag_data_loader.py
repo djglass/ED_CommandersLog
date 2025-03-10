@@ -74,7 +74,10 @@ def load_all_json_data() -> None:
                         raise TypeError(f"Invalid JSON format in {filename}")
 
                     for entry in data:
-                        add_knowledge_entry(entry)
+                        if isinstance(entry, dict):
+                            add_knowledge_entry(entry)
+                        else:
+                            logging.warning(f"⚠️ Skipped non-dictionary entry in {filename}: {entry}")
             except json.JSONDecodeError as e:
                 logging.error(f"❌ ERROR: Failed to decode JSON in {filename} - {e}")
             except Exception as e:

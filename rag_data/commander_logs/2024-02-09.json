@@ -1,0 +1,31 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-09",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**.",
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **HIP 86940**, **HIP 86940 2 a**.",
+      "Current location: **HIP 86940**, **HIP 86940 2 a**.",
+      "Current location: **Acurus**, **Acurus A 3**.",
+      "Current location: **Acurus**, **Acurus A 3**."
+    ],
+    "Travel": [
+      "Jumped to **HIP 87715**.",
+      "Jumped to **Col 285 Sector OU-E c12-23**.",
+      "Jumped to **Col 285 Sector CZ-K b23-7**.",
+      "Jumped to **HIP 91073**.",
+      "Jumped to **Col 285 Sector AO-M b22-1**.",
+      "Jumped to **Col 285 Sector WH-O b21-4**.",
+      "Jumped to **Acurus**."
+    ],
+    "Docking": [
+      "Docked at **Friesner Orbital** in **Acurus**.",
+      "Undocked from **Friesner Orbital**."
+    ]
+  }
+}

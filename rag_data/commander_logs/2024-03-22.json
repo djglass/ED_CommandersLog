@@ -1,0 +1,47 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-03-22",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **11 Raw**, **26 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **12 Raw**, **26 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **14 Raw**, **26 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **14 Raw**, **26 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **14 Raw**, **26 Encoded**, **40 Manufactured**.",
+      "Gathered materials: **14 Raw**, **26 Encoded**, **40 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Wregoe TY-A d1**, **Wregoe TY-A d1**.",
+      "Current location: **HIP 36601**, **HIP 36601 C 3 b**.",
+      "Current location: **HIP 36601**, **HIP 36601 C 5 a**.",
+      "Current location: **HIP 36601**, **HIP 36601 C 5 a**.",
+      "Current location: **HIP 36601**, **HIP 36601 C 5 a**.",
+      "Current location: **HIP 36601**, **HIP 36601 C 5 a**."
+    ],
+    "Travel": [
+      "Jumped to **Wregoe SD-A c1-0**.",
+      "Jumped to **Outotz IG-Z c28-0**.",
+      "Jumped to **Outotz CN-A d14-7**.",
+      "Jumped to **Outotz CF-B c28-1**.",
+      "Jumped to **Outotz YG-C d13-1**.",
+      "Jumped to **Outotz XD-D c27-0**.",
+      "Jumped to **Outotz TX-E c26-0**.",
+      "Jumped to **Outotz RM-G c25-0**.",
+      "Jumped to **Outotz SF-E d12-4**.",
+      "Jumped to **Outotz TF-E d12-1**.",
+      "Jumped to **Outotz IF-K c23-0**.",
+      "Jumped to **Outotz AT-N c21-0**.",
+      "Jumped to **Outotz YX-N c21-0**.",
+      "Jumped to **Outotz WC-O c21-0**.",
+      "Jumped to **HIP 36601**."
+    ],
+    "Docking": [
+      "Docked at **H3M-2HX** in **Outotz YX-N c21-0**.",
+      "Undocked from **H3M-2HX**.",
+      "Docked at **TLN-63G** in **HIP 36601**.",
+      "Undocked from **TLN-63G**.",
+      "Docked at **TBH-1HJ** in **HIP 36601**.",
+      "Undocked from **TBH-1HJ**."
+    ]
+  }
+}

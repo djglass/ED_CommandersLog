@@ -1,0 +1,75 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-11-21",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **29 Encoded**, **56 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Eoch Flyuae JO-W c16-346**, **Eoch Flyuae JO-W c16-346 AB**.",
+      "Current location: **Eol Prou LW-L c8-127**, **Odin's Crag**."
+    ],
+    "Travel": [
+      "Jumped to **Eoch Flyuae QA-T c18-141**.",
+      "Jumped to **Eoch Flyuae UG-R c19-171**.",
+      "Jumped to **Eoch Flyuae GS-Z b43-61**.",
+      "Jumped to **Eoch Flyuae RU-F d11-183**.",
+      "Jumped to **Eoch Flyuae NG-I c24-431**.",
+      "Jumped to **Eoch Flyuae YG-C d13-755**.",
+      "Jumped to **Eoch Flyuae CN-A d14-384**.",
+      "Jumped to **Dryio Flyuae LC-C c133**.",
+      "Jumped to **Dryio Flyuae GX-Y b2-12**.",
+      "Jumped to **Dryio Flyuae XJ-A e58**.",
+      "Jumped to **Dryio Flyuae AL-X d1-3002**.",
+      "Jumped to **Dryio Flyuae ER-V d2-3474**.",
+      "Jumped to **Dryio Flyuae EF-A b16-22**.",
+      "Jumped to **Dryio Flyuae EF-A b16-13**.",
+      "Jumped to **Dryio Flyuae LD-S d4-519**.",
+      "Jumped to **Dryio Flyuae OJ-Q d5-657**.",
+      "Jumped to **Dryio Flyuae TP-G b26-60**.",
+      "Jumped to **Dryooe Flyou PK-B b29-5**.",
+      "Jumped to **Dryooe Flyou AZ-X c15-157**.",
+      "Jumped to **Dryooe Flyou HL-U c17-2**.",
+      "Jumped to **Dryooe Flyou SI-J d9-4**.",
+      "Jumped to **Dryooe Flyou WO-H d10-209**.",
+      "Jumped to **Dryooe Flyou ZP-L c22-502**.",
+      "Jumped to **Dryooe Flyou NE-Q b48-3**.",
+      "Jumped to **Dryooe Flyou XW-K b51-29**.",
+      "Jumped to **Dryooe Flyou MV-D b55-1**.",
+      "Jumped to **Dryooe Flyou YG-Z c28-345**.",
+      "Jumped to **Eol Prou DY-B c192**.",
+      "Jumped to **Eol Prou KK-Y c1-203**.",
+      "Jumped to **Eol Prou JT-P b7-24**.",
+      "Jumped to **Eol Prou ZI-R c5-0**.",
+      "Jumped to **Eol Prou CP-P c6-54**.",
+      "Jumped to **Eol Prou LW-L c8-214**.",
+      "Jumped to **Colonia**.",
+      "Jumped to **Ratraii**.",
+      "Jumped to **Colonia**."
+    ],
+    "Docking": [
+      "Docked at **Colonia Orbital** in **Colonia**.",
+      "Undocked from **Colonia Orbital**.",
+      "Docked at **Colonia Dream** in **Ratraii**.",
+      "Undocked from **Colonia Dream**.",
+      "Docked at **Campos Biochemical Laboratory** in **Ratraii**.",
+      "Undocked from **Campos Biochemical Laboratory**.",
+      "Docked at **Lange Biological Site** in **Ratraii**.",
+      "Undocked from **Lange Biological Site**.",
+      "Docked at **Colonia Dream** in **Ratraii**.",
+      "Undocked from **Colonia Dream**.",
+      "Docked at **Uniyal Extraction Prospect** in **Ratraii**.",
+      "Undocked from **Odin's Crag**.",
+      "Docked at **Jaques Station** in **Colonia**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Courier_Engineer**.",
+      "Completed mission: **Mission_Courier_Engineer_name**, earning **0 Cr**.",
+      "Accepted mission: **Mission_OnFoot_Collect_Contact_MB**.",
+      "Accepted mission: **Mission_OnFoot_Delivery_Contact_MB**.",
+      "Completed mission: **Mission_OnFoot_Collect_Contact_MB_name**, earning **16,381 Cr**.",
+      "Completed mission: **Mission_OnFoot_Delivery_Contact_MB_name**, earning **15,291 Cr**.",
+      "Accepted mission: **Mission_OnFoot_Delivery_Contact_MB**."
+    ]
+  }
+}

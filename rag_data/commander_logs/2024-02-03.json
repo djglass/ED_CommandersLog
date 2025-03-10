@@ -1,0 +1,68 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-03",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **2 Encoded**, **1 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Cherbones**, **Hume Orbital**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Courier_Expansion**.",
+      "Accepted mission: **Mission_Courier_Expansion**.",
+      "Accepted mission: **MISSION_Salvage_Expansion**.",
+      "Completed mission: **Mission_Courier_Expansion_name**, earning **17,340 Cr**.",
+      "Accepted mission: **Mission_Courier_Expansion**.",
+      "Accepted mission: **Mission_Courier_Expansion**.",
+      "Completed mission: **Mission_Courier_Expansion_name**, earning **35,247 Cr**.",
+      "Accepted mission: **Mission_Courier_Expansion**.",
+      "Completed mission: **Mission_Courier_Expansion_name**, earning **22,623 Cr**.",
+      "Completed mission: **Mission_Courier_Expansion_name**, earning **50,753 Cr**.",
+      "Completed mission: **Mission_Courier_Expansion_name**, earning **24,608 Cr**.",
+      "Completed mission: **MISSION_Salvage_Expansion_name**, earning **30,429 Cr**."
+    ],
+    "Docking": [
+      "Undocked from **Hume Orbital**.",
+      "Docked at **Drake Plant** in **G 59-7**.",
+      "Undocked from **Drake Plant**.",
+      "Docked at **Lagrange City** in **G 59-7**.",
+      "Undocked from **Lagrange City**.",
+      "Docked at **Mallory Relay** in **LP 376-62**.",
+      "Undocked from **Mallory Relay**.",
+      "Docked at **Reed Terminal** in **LP 376-62**.",
+      "Undocked from **Reed Terminal**.",
+      "Docked at **Hume Orbital** in **Cherbones**.",
+      "Undocked from **Hume Orbital**."
+    ],
+    "Travel": [
+      "Jumped to **BD+31 2290**.",
+      "Jumped to **Bei Dou Sector CV-Y b1**.",
+      "Jumped to **LHS 2432**.",
+      "Jumped to **G 123-7**.",
+      "Jumped to **G 123-16**.",
+      "Jumped to **G 148-61**.",
+      "Jumped to **LHS 5217a**.",
+      "Jumped to **CX Com**.",
+      "Jumped to **G 59-7**.",
+      "Jumped to **LP 376-62**.",
+      "Jumped to **G 59-7**.",
+      "Jumped to **CX Com**.",
+      "Jumped to **LHS 5217a**.",
+      "Jumped to **G 148-61**.",
+      "Jumped to **G 123-16**.",
+      "Jumped to **G 123-7**.",
+      "Jumped to **LHS 2432**.",
+      "Jumped to **Bei Dou Sector CV-Y b1**.",
+      "Jumped to **Cherbones**.",
+      "Jumped to **BD+31 2290**.",
+      "Jumped to **Bei Dou Sector CV-Y b1**.",
+      "Jumped to **LHS 2432**.",
+      "Jumped to **G 122-60**.",
+      "Jumped to **G 123-8**.",
+      "Jumped to **Kaha'i**.",
+      "Jumped to **Parcae**.",
+      "Jumped to **LFT 898**."
+    ]
+  }
+}

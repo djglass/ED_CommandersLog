@@ -1,0 +1,47 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-13",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **0 Raw**, **2 Encoded**, **7 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Daruwutja**, **Daruwutja B 5**."
+    ],
+    "Travel": [
+      "Jumped to **Arietis Sector KU-D a13-4**.",
+      "Jumped to **Tsongoris**.",
+      "Jumped to **Arietis Sector JN-S b4-1**.",
+      "Jumped to **Hohnpeiadja**.",
+      "Jumped to **Lyncis Sector CL-Y c7**.",
+      "Jumped to **Lyncis Sector CL-Y c14**.",
+      "Jumped to **Lyncis Sector MX-U b2-0**.",
+      "Jumped to **Kwer**.",
+      "Jumped to **Lyncis Sector EG-Y d79**.",
+      "Jumped to **Madutja**.",
+      "Jumped to **Bingait**.",
+      "Jumped to **Hyades Sector JX-T c3-23**.",
+      "Jumped to **Eudora**.",
+      "Jumped to **BD+20 1018**.",
+      "Jumped to **Ugric**.",
+      "Jumped to **Arietis Sector DG-X c1-9**.",
+      "Jumped to **Arietis Sector DB-W b2-0**.",
+      "Jumped to **Arietis Sector YU-X b1-4**."
+    ],
+    "Docking": [
+      "Docked at **Sharp Station** in **Madutja**.",
+      "Undocked from **Sharp Station**.",
+      "Docked at **Maury Vision** in **BD+20 1018**.",
+      "Undocked from **Maury Vision**."
+    ],
+    "Trade": [
+      "Sold **2x explosives** for **1,628 Cr**.",
+      "Sold **2x pesticides** for **252 Cr**.",
+      "Sold **1x uranium** for **3,338 Cr**.",
+      "Sold **1x cryolite** for **7,987 Cr**.",
+      "Sold **1x moissanite** for **15,668 Cr**.",
+      "Sold **2x computercomponents** for **1,076 Cr**.",
+      "Sold **1x scrap** for **89 Cr**."
+    ]
+  }
+}

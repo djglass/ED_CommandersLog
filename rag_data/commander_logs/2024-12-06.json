@@ -1,0 +1,77 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-12-06",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**.",
+      "Gathered materials: **28 Raw**, **31 Encoded**, **57 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **V886 Centauri**, **Rescue Ship Cornwallis**.",
+      "Current location: **V886 Centauri**, **Rescue Ship Cornwallis**.",
+      "Current location: **Synuefe EN-H d11-96**, **Synuefe EN-H d11-96 7 a**.",
+      "Current location: **Synuefe EN-H d11-96**, **Synuefe EN-H d11-96 7 a**.",
+      "Current location: **Synuefe EN-H d11-96**, **Synuefe EN-H d11-96 7 a**.",
+      "Current location: **Synuefe QA-E b45-4**, **Synuefe QA-E b45-4 3**.",
+      "Current location: **Synuefe QA-E b45-4**, **Synuefe QA-E b45-4 3**.",
+      "Current location: **Synuefe QA-E b45-4**, **Synuefe QA-E b45-4 3**."
+    ],
+    "Docking": [
+      "Undocked from **Rescue Ship Cornwallis**.",
+      "Docked at **Glorious Prospect** in **LHS 1163**.",
+      "Undocked from **Glorious Prospect**.",
+      "Docked at **Prospect's Deep** in **Mbooni**.",
+      "Undocked from **Prospect's Deep**.",
+      "Docked at **Rescue Ship Cornwallis** in **V886 Centauri**.",
+      "Undocked from **Rescue Ship Cornwallis**.",
+      "Docked at **Rescue Ship Cornwallis** in **V886 Centauri**.",
+      "Undocked from **Rescue Ship Cornwallis**.",
+      "Docked at **Rescue Ship Cornwallis** in **V886 Centauri**.",
+      "Undocked from **Rescue Ship Cornwallis**.",
+      "Docked at **Garriott Terminal** in **V886 Centauri**.",
+      "Undocked from **Garriott Terminal**.",
+      "Docked at **H2L-14H** in **Synuefe NL-N c23-4**.",
+      "Undocked from **H2L-14H**.",
+      "Docked at **Indigo Dock** in **Synuefe EN-H d11-96**.",
+      "Undocked from **Indigo Dock**.",
+      "Docked at **The Prospect** in **Synuefe EN-H d11-96**.",
+      "Undocked from **The Prospect**.",
+      "Docked at **The Prospect** in **Synuefe EN-H d11-96**.",
+      "Undocked from **The Prospect**.",
+      "Docked at **The Prospect** in **Synuefe EN-H d11-96**."
+    ],
+    "Travel": [
+      "Jumped to **LHS 1163**.",
+      "Jumped to **Mbooni**.",
+      "Jumped to **V886 Centauri**.",
+      "Jumped to **Ju Shakhe**.",
+      "Jumped to **V886 Centauri**.",
+      "Jumped to **Crucis Sector FQ-Y b2**.",
+      "Jumped to **Col 285 Sector KM-L c8-21**.",
+      "Jumped to **Synuefe XZ-S a99-5**.",
+      "Jumped to **Synuefe DF-T a99-2**.",
+      "Jumped to **Synuefe EC-Y b48-4**.",
+      "Jumped to **IC 2391 Sector CW-V b2-6**.",
+      "Jumped to **IC 2391 Sector HR-V b2-12**.",
+      "Jumped to **IC 2391 Sector EQ-Y c43**.",
+      "Jumped to **Synuefe TM-Z b47-4**.",
+      "Jumped to **Synuefe YP-Y a95-0**.",
+      "Jumped to **Synuefe NL-N c23-4**.",
+      "Jumped to **Synuefe VL-C b46-0**.",
+      "Jumped to **Synuefe EN-H d11-96**.",
+      "Jumped to **Synuefe QA-E b45-4**.",
+      "Jumped to **Synuefe EN-H d11-96**.",
+      "Jumped to **Synuefe QA-E b45-4**.",
+      "Jumped to **Synuefe EN-H d11-96**."
+    ],
+    "Missions": [
+      "Accepted mission: **MISSION_genericPermit1**."
+    ]
+  }
+}

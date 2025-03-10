@@ -1,0 +1,50 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2025-01-09",
+  "categories": {
+    "Docking": [
+      "Docked at **VFN-BHX** in **Omicron Capricorni B**.",
+      "Undocked from **VFN-BHX**.",
+      "Docked at **T2X-56V** in **Omicron Capricorni B**.",
+      "Undocked from **T2X-56V**.",
+      "Docked at **VFN-BHX** in **Omicron Capricorni B**.",
+      "Undocked from **VFN-BHX**.",
+      "Docked at **VLK-B4H** in **Omicron Capricorni B**.",
+      "Undocked from **VLK-B4H**.",
+      "Docked at **VFN-BHX** in **Omicron Capricorni B**.",
+      "Undocked from **VFN-BHX**.",
+      "Docked at **Jameson Memorial** in **Shinrarta Dezhra**.",
+      "Undocked from **Jameson Memorial**."
+    ],
+    "Trade": [
+      "Sold **1x silver** for **34,991 Cr**.",
+      "Sold **213x platinum** for **52,328,988 Cr**.",
+      "Sold **256x platinum** for **62,726,656 Cr**.",
+      "Sold **8x platinum** for **1,960,208 Cr**.",
+      "Sold **136x platinum** for **33,323,536 Cr**."
+    ],
+    "Materials": [
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**.",
+      "Gathered materials: **28 Raw**, **41 Encoded**, **62 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Omicron Capricorni B**, **Omicron Capricorni B B 2**.",
+      "Current location: **Omicron Capricorni B**, **Omicron Capricorni B B 1 A Ring**."
+    ],
+    "Travel": [
+      "Jumped to **Alrai Sector QI-K a8-6**.",
+      "Jumped to **LTT 7434**.",
+      "Jumped to **L 484-31**.",
+      "Jumped to **ER 8**.",
+      "Jumped to **Shinrarta Dezhra**.",
+      "Jumped to **Crucis Sector CL-Y c20**.",
+      "Jumped to **Crucis Sector KN-T b3-4**.",
+      "Jumped to **Khronos**.",
+      "Jumped to **Mambojas**.",
+      "Jumped to **Alrai Sector LH-M a7-3**.",
+      "Jumped to **Col 285 Sector JV-E a41-5**.",
+      "Jumped to **Col 285 Sector JO-N b21-1**.",
+      "Jumped to **Omicron Capricorni B**."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-02-21",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **4 Raw**, **21 Encoded**, **35 Manufactured**.",
+      "Gathered materials: **4 Raw**, **21 Encoded**, **35 Manufactured**.",
+      "Gathered materials: **6 Raw**, **21 Encoded**, **35 Manufactured**.",
+      "Gathered materials: **6 Raw**, **21 Encoded**, **35 Manufactured**.",
+      "Gathered materials: **6 Raw**, **21 Encoded**, **35 Manufactured**.",
+      "Gathered materials: **6 Raw**, **21 Encoded**, **35 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Pardian**, **Pardian A 4**.",
+      "Current location: **Pardian**, **Pardian A 4**.",
+      "Current location: **Pardian**, **Pardian A 8**.",
+      "Current location: **Pardian**, **Pardian A 8**.",
+      "Current location: **Pardian**, **Pardian A 8**.",
+      "Current location: **Pardian**, **Pardian A 8**."
+    ],
+    "Travel": [
+      "Jumped to **Harpuligni**.",
+      "Jumped to **Pardian**.",
+      "Jumped to **Qi Yomisii**.",
+      "Jumped to **Njulngan**.",
+      "Jumped to **Qi Yomisii**."
+    ],
+    "Docking": [
+      "Docked at **Moreno Drilling Exchange** in **Pardian**.",
+      "Undocked from **Moreno Drilling Exchange**.",
+      "Docked at **Seddon Terminal** in **Qi Yomisii**.",
+      "Undocked from **Seddon Terminal**.",
+      "Docked at **Tesla Terminal** in **Njulngan**.",
+      "Undocked from **Tesla Terminal**.",
+      "Docked at **Seddon Terminal** in **Qi Yomisii**."
+    ],
+    "Missions": [
+      "Completed mission: **Mission_Salvage_Planet_name**, earning **310,368 Cr**."
+    ],
+    "Trade": [
+      "Purchased **11x cobalt**.",
+      "Sold **11x cobalt** for **132,286 Cr**.",
+      "Sold **1x beryllium** for **8,733 Cr**.",
+      "Sold **1x nerveagents** for **9,300 Cr**.",
+      "Sold **1x pyrophyllite** for **27,211 Cr**.",
+      "Sold **1x autofabricators** for **3,065 Cr**.",
+      "Sold **1x resonatingseparators** for **6,487 Cr**."
+    ]
+  }
+}

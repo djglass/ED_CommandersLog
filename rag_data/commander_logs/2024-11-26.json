@@ -1,0 +1,51 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-11-26",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **29 Encoded**, **56 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **56 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Tir**, **Bolden's Enterprise**.",
+      "Current location: **Desy**, **Morten's Paradise**.",
+      "Current location: **Desy**, **Desy 1**."
+    ],
+    "Trade": [
+      "Sold **784x ceramiccomposites** for **8,046,192 Cr**.",
+      "Purchased **92x agronomictreatment**.",
+      "Purchased **692x progenitorcells**.",
+      "Sold **692x progenitorcells** for **4,563,740 Cr**.",
+      "Sold **92x agronomictreatment** for **958,456 Cr**."
+    ],
+    "Docking": [
+      "Undocked from **Bolden's Enterprise**.",
+      "Docked at **Jaques Station** in **Colonia**.",
+      "Undocked from **Jaques Station**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**.",
+      "Undocked from **Morten's Paradise**.",
+      "Docked at **Morten's Paradise** in **Desy**."
+    ],
+    "Travel": [
+      "Jumped to **Colonia**.",
+      "Jumped to **Sovereign's Reach**.",
+      "Jumped to **Desy**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Massacre_Conflict_CivilWar**.",
+      "Completed mission: **Mission_Massacre_Conflict_CivilWar_name**, earning **62,673 Cr**.",
+      "Accepted mission: **Mission_Massacre_Conflict_CivilWar**.",
+      "Accepted mission: **Mission_Massacre_Conflict_CivilWar**.",
+      "Accepted mission: **Mission_Massacre_Conflict_CivilWar**."
+    ]
+  }
+}

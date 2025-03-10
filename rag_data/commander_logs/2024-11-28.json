@@ -1,0 +1,40 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-11-28",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **29 Encoded**, **56 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Colonia**, **Jaques Station**."
+    ],
+    "Missions": [
+      "Accepted mission: **Mission_Collect_Investment**.",
+      "Completed mission: **Mission_Collect_Investment_name**, earning **328,519 Cr**.",
+      "Accepted mission: **Mission_Salvage**.",
+      "Accepted mission: **Mission_Salvage**.",
+      "Completed mission: **Mission_Salvage_name**, earning **10,000 Cr**.",
+      "Accepted mission: **Mission_Courier_Expansion**.",
+      "Accepted mission: **Mission_Courier_Expansion**."
+    ],
+    "Docking": [
+      "Undocked from **Jaques Station**.",
+      "Docked at **Jaques Station** in **Colonia**.",
+      "Undocked from **Jaques Station**.",
+      "Docked at **Rock** in **Chrysus**.",
+      "Undocked from **Rock**.",
+      "Docked at **Jaques Station** in **Colonia**.",
+      "Undocked from **Jaques Station**.",
+      "Docked at **Jaques Station** in **Colonia**."
+    ],
+    "Travel": [
+      "Jumped to **Chrysus**.",
+      "Jumped to **Colonia**.",
+      "Jumped to **Ratraii**.",
+      "Jumped to **Colonia**."
+    ],
+    "Trade": [
+      "Purchased **35x lanthanum**."
+    ]
+  }
+}

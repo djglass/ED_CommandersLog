@@ -1,0 +1,50 @@
+{
+  "commander": "TOADIE MUDGUTS",
+  "date": "2024-11-15",
+  "categories": {
+    "Materials": [
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**.",
+      "Gathered materials: **28 Raw**, **29 Encoded**, **55 Manufactured**."
+    ],
+    "Location": [
+      "Current location: **Blae Drye OO-B b19-0**, **Blae Drye OO-B b19-0 A 8**.",
+      "Current location: **Blae Drye XO-Z c16-16**, **Blae Drye XO-Z c16-16 A**.",
+      "Current location: **Blae Drye NI-Q b38-2**, **Blae Drye NI-Q b38-2 4**.",
+      "Current location: **Blae Drye AT-F d12-81**, **Blae Drye AT-F d12-81 ABC**.",
+      "Current location: **Blae Drye AT-F d12-81**, **Blae Drye AT-F d12-81 AB**.",
+      "Current location: **NGC 6705 Sector NS-T d3-94**, **NGC 6705 Sector NS-T d3-94 2**.",
+      "Current location: **Pyraleau ZV-K d9-173**, **Pyraleau ZV-K d9-173 A 4**."
+    ],
+    "Travel": [
+      "Jumped to **Blae Drye BC-S d5-35**.",
+      "Jumped to **Blae Drye AC-S d5-54**.",
+      "Jumped to **Blae Drye DZ-H b29-0**.",
+      "Jumped to **Blae Drye PM-C b32-2**.",
+      "Jumped to **Blae Drye XO-Z c16-16**.",
+      "Jumped to **Blae Drye NI-Q b38-2**.",
+      "Jumped to **Blae Drye CH-J b42-1**.",
+      "Jumped to **Blae Drye TZ-O c22-11**.",
+      "Jumped to **Blae Drye DS-J c25-7**.",
+      "Jumped to **Blae Drye AP-K b55-4**.",
+      "Jumped to **Blae Drye RQ-C c29-14**.",
+      "Jumped to **Gria Drye AR-I b1-6**.",
+      "Jumped to **NGC 6705 Sector JC-I b11-6**.",
+      "Jumped to **NGC 6705 Sector NS-T d3-94**.",
+      "Jumped to **NGC 6705 Sector IX-J c9-1**.",
+      "Jumped to **Pyraleau OR-J b14-9**.",
+      "Jumped to **Pyraleau YJ-E b17-5**.",
+      "Jumped to **Pyraleau IC-Z b19-2**.",
+      "Jumped to **Pyraleau XU-J c11-20**.",
+      "Jumped to **Pyraleau PD-Q d6-127**.",
+      "Jumped to **Pyraleau LT-C c15-16**.",
+      "Jumped to **Pyraleau SJ-O d7-154**.",
+      "Jumped to **Pyraleau WL-X c17-32**.",
+      "Jumped to **Pyraleau ZV-K d9-173**."
+    ]
+  }
+}
