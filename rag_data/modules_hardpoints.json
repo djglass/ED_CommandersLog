@@ -1,0 +1,99 @@
+[
+    {
+      "id": "hardpoint_beam_laser",
+      "name": "Beam Laser",
+      "category": "Hardpoint",
+      "module_type": "Laser Weapon",
+      "description": "Beam lasers emit continuous energy beams that quickly deplete enemy shields. They’re most effective against shielded targets but generate high heat.",
+      "common_uses": ["Shield stripping", "Bounty hunting", "Wing combat"]
+    },
+    {
+      "id": "hardpoint_pulse_laser",
+      "name": "Pulse Laser",
+      "category": "Hardpoint",
+      "module_type": "Laser Weapon",
+      "description": "Pulse lasers fire rapid energy bursts and are known for efficiency and heat management. They're ideal for consistent shield damage and versatile builds.",
+      "common_uses": ["General-purpose combat", "Low-heat builds", "Multi-role ships"]
+    },
+    {
+      "id": "hardpoint_burst_laser",
+      "name": "Burst Laser",
+      "category": "Hardpoint",
+      "module_type": "Laser Weapon",
+      "description": "Burst lasers fire 3-shot bursts and offer a middle ground between beams and pulse lasers. They do more damage per burst at higher energy cost.",
+      "common_uses": ["Shield damage", "Medium-range dogfights"]
+    },
+    {
+      "id": "hardpoint_multicannon",
+      "name": "Multi-Cannon",
+      "category": "Hardpoint",
+      "module_type": "Kinetic Weapon",
+      "description": "Multi-cannons fire ballistic projectiles at high rate. They are excellent against hulls and have great ammo efficiency, making them ideal for prolonged fights.",
+      "common_uses": ["Hull damage", "PvE farming", "PvP sustained DPS"]
+    },
+    {
+      "id": "hardpoint_cannon",
+      "name": "Cannon",
+      "category": "Hardpoint",
+      "module_type": "Kinetic Weapon",
+      "description": "Cannons fire heavy rounds that deal massive hull damage on impact. They're most effective against large, slow targets and in close-range engagements.",
+      "common_uses": ["Hull breaking", "Anti-large-ship combat"]
+    },
+    {
+      "id": "hardpoint_railgun",
+      "name": "Railgun",
+      "category": "Hardpoint",
+      "module_type": "Special Weapon",
+      "description": "Railguns fire high-velocity projectiles that ignore some defenses. Used for sniping modules, disabling power plants, and delivering experimental effects.",
+      "common_uses": ["Module sniping", "Powerplay assassination", "PvP meta"]
+    },
+    {
+      "id": "hardpoint_plasma_accelerator",
+      "name": "Plasma Accelerator",
+      "category": "Hardpoint",
+      "module_type": "Plasma Weapon",
+      "description": "Plasma accelerators fire slow-moving energy orbs that deal huge damage to both shields and hull. They're power-hungry and difficult to aim but devastating.",
+      "common_uses": ["Burst damage builds", "Large-ship combat", "Alpha strikes"]
+    },
+    {
+      "id": "hardpoint_fragment_cannon",
+      "name": "Fragment Cannon",
+      "category": "Hardpoint",
+      "module_type": "Shotgun Weapon",
+      "description": "Frag cannons fire high-spread kinetic bursts at short range. Effective in close quarters, especially against hulls or for disabling modules.",
+      "common_uses": ["Close-quarters PvP", "Module damage", "Shield bypass"]
+    },
+    {
+      "id": "hardpoint_mining_laser",
+      "name": "Mining Laser",
+      "category": "Hardpoint",
+      "module_type": "Industrial Tool",
+      "description": "Mining lasers are used to extract raw materials from asteroids. These are non-combat modules essential for all mining operations.",
+      "common_uses": ["Laser mining", "Material gathering"]
+    },
+    {
+      "id": "hardpoint_missile_rack",
+      "name": "Missile Rack",
+      "category": "Hardpoint",
+      "module_type": "Explosive Weapon",
+      "description": "Missile racks deliver targeted explosive payloads. They're good against modules and hulls but limited by ammo and ineffective vs. shields.",
+      "common_uses": ["Module destruction", "Hull cracking", "PvE support"]
+    },
+    {
+      "id": "hardpoint_torpedo_pylon",
+      "name": "Torpedo Pylon",
+      "category": "Hardpoint",
+      "module_type": "Explosive Weapon",
+      "description": "Torpedoes deal massive explosive damage and are often used to destroy power plants or high-value targets. Expensive and ammo-limited.",
+      "common_uses": ["One-hit kills", "Module assassination", "Powerplay PvP"]
+    },
+    {
+      "id": "hardpoint_shock_cannon",
+      "name": "Shock Cannon",
+      "category": "Hardpoint",
+      "module_type": "Experimental Weapon",
+      "description": "Shock Cannons are rapid-fire energy weapons that disrupt flight controls and modules. Limited in range and mostly used for utility or roleplay.",
+      "common_uses": ["Disruption", "PvP harassment", "Experimental builds"]
+    }
+  ]
+  

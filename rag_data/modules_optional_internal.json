@@ -1,0 +1,83 @@
+[
+    {
+      "id": "module_fuel_scoop",
+      "name": "Fuel Scoop",
+      "category": "Optional Internal",
+      "module_type": "Fuel Scoop",
+      "description": "A fuel scoop allows a ship to collect hydrogen fuel from stars with a scoopable classification (O, B, A, F, G, K, M). It's essential for long-range travel without constant station stops.",
+      "common_uses": ["Exploration", "Long-distance trading", "Mission chains"]
+    },
+    {
+      "id": "module_cargo_rack",
+      "name": "Cargo Rack",
+      "category": "Optional Internal",
+      "module_type": "Cargo Storage",
+      "description": "Cargo racks determine how much standard cargo your ship can carry. Larger racks are key to trading, mining, and mission hauling.",
+      "common_uses": ["Trading", "Mining", "Delivery missions"]
+    },
+    {
+      "id": "module_passenger_cabin",
+      "name": "Passenger Cabin",
+      "category": "Optional Internal",
+      "module_type": "Passenger Transport",
+      "description": "Passenger cabins allow you to accept transport missions, carrying tourists, refugees, or VIPs to destinations. Available in economy, business, first class, and luxury variants.",
+      "common_uses": ["Passenger missions", "Luxury tourism", "Faction-aligned transports"]
+    },
+    {
+      "id": "module_fighter_hangar",
+      "name": "Fighter Hangar",
+      "category": "Optional Internal",
+      "module_type": "Fighter Bay",
+      "description": "This module stores and launches ship-launched fighters (SLFs). Used in combat support, multi-crew combat, and large ship defense.",
+      "common_uses": ["Combat support", "Multicrew gameplay", "CZ and bounty builds"]
+    },
+    {
+      "id": "module_refinery",
+      "name": "Refinery",
+      "category": "Optional Internal",
+      "module_type": "Mining Support",
+      "description": "The refinery processes raw asteroid fragments into tradable materials. A mandatory module for any mining vessel.",
+      "common_uses": ["Mining builds", "Material farming", "Laser and core mining"]
+    },
+    {
+      "id": "module_limpet_controller_collect",
+      "name": "Collector Limpet Controller",
+      "category": "Optional Internal",
+      "module_type": "Limpet Control",
+      "description": "Collector limpets retrieve cargo, materials, or fragments and bring them to the ship. An essential quality-of-life module for mining or salvage.",
+      "common_uses": ["Mining", "Salvage", "FSS & AX recovery operations"]
+    },
+    {
+      "id": "module_limpet_controller_prospect",
+      "name": "Prospector Limpet Controller",
+      "category": "Optional Internal",
+      "module_type": "Limpet Control",
+      "description": "Prospector limpets analyze asteroids for mineral content and increase yield when deployed. Must-have for core and laser mining.",
+      "common_uses": ["Mining", "Core extraction", "Yield optimization"]
+    },
+    {
+      "id": "module_detailed_surface_scanner",
+      "name": "Detailed Surface Scanner",
+      "category": "Optional Internal",
+      "module_type": "Planetary Scanner",
+      "description": "This module maps planets, revealing landable terrain, geological signals, and biological features. It's also required for exobiology.",
+      "common_uses": ["Exploration", "Exobiology", "Mapping landable worlds"]
+    },
+    {
+      "id": "module_auto_field_maintenance_unit",
+      "name": "Auto Field Maintenance Unit (AFMU)",
+      "category": "Optional Internal",
+      "module_type": "Repair System",
+      "description": "The AFMU can repair most ship modules (except the hull) without docking. It’s often used during deep-space exploration to recover from module wear.",
+      "common_uses": ["Exploration", "Damage control in deep space", "Module repair"]
+    },
+    {
+      "id": "module_shield_cell_bank",
+      "name": "Shield Cell Bank",
+      "category": "Optional Internal",
+      "module_type": "Shield Recharger",
+      "description": "A SCB quickly restores depleted shields by consuming stored energy. It's widely used in PvE combat and some PvP builds.",
+      "common_uses": ["Combat", "Bounty hunting", "Thick shield tank builds"]
+    }
+  ]
+  

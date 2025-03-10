@@ -1,0 +1,59 @@
+[
+    {
+      "id": "module_fsd",
+      "name": "Frame Shift Drive",
+      "category": "Core Internal",
+      "module_type": "Frame Shift Drive",
+      "description": "The Frame Shift Drive (FSD) is the core module responsible for supercruise travel within star systems and hyperspace jumps between them.",
+      "common_uses": ["Jump range optimization", "Exploration builds", "Mission running", "Long-distance travel"]
+    },
+    {
+      "id": "module_power_plant",
+      "name": "Power Plant",
+      "category": "Core Internal",
+      "module_type": "Power Plant",
+      "description": "The power plant supplies energy to all ship systems. A stronger plant allows for more powerful modules and weapons, while better quality plants produce less heat.",
+      "common_uses": ["Combat loadouts", "Heavy firepower ships", "Heat management"]
+    },
+    {
+      "id": "module_thrusters",
+      "name": "Thrusters",
+      "category": "Core Internal",
+      "module_type": "Thrusters",
+      "description": "Thrusters control a ship’s sublight movement, including linear thrust and lateral/vertical maneuvering. Thruster quality affects speed, agility, and boost capabilities.",
+      "common_uses": ["Dogfighting", "Surface landing", "Escape velocity management"]
+    },
+    {
+      "id": "module_power_distributor",
+      "name": "Power Distributor",
+      "category": "Core Internal",
+      "module_type": "Power Distributor",
+      "description": "This module manages power allocation between systems (SYS), engines (ENG), and weapons (WEP). Higher-grade distributors recharge faster and hold larger power reserves.",
+      "common_uses": ["Combat energy management", "Boost chaining", "Sustained weapon fire"]
+    },
+    {
+      "id": "module_life_support",
+      "name": "Life Support",
+      "category": "Core Internal",
+      "module_type": "Life Support",
+      "description": "Life support systems supply breathable atmosphere in the cockpit and suit. If the canopy breaches, it provides emergency oxygen until the ship is repaired or docked.",
+      "common_uses": ["Survivability in combat", "Rebuy-saving backups", "Essential for all ships"]
+    },
+    {
+      "id": "module_sensors",
+      "name": "Sensors",
+      "category": "Core Internal",
+      "module_type": "Sensors",
+      "description": "Sensors control your ability to detect and scan objects in space. Higher-grade sensors increase range and detail, especially useful in scanning or bounty hunting.",
+      "common_uses": ["Target acquisition", "Exploration", "Bounty hunting", "Navigation"]
+    },
+    {
+      "id": "module_fuel_tank",
+      "name": "Fuel Tank",
+      "category": "Core Internal",
+      "module_type": "Fuel Tank",
+      "description": "The fuel tank stores hydrogen fuel used for Frame Shift Drive jumps and thruster operations. Larger tanks allow for longer operations without refueling.",
+      "common_uses": ["Long-range expeditions", "Bulk haulers", "Extended mission durations"]
+    }
+  ]
+  

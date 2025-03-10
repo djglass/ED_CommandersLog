@@ -1,0 +1,63 @@
+[
+    {
+      "id": "ship_diamondback_scout",
+      "name": "Diamondback Scout",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Exploration / Light Combat",
+      "size": "Small",
+      "description": "The Diamondback Scout is an entry-level explorer with excellent heat efficiency and strong maneuverability. It’s a budget ship often used for high-risk recon or long-range scans.",
+      "strengths": ["Great heat management", "Low rebuy cost", "Good handling"],
+      "weaknesses": ["Limited jump range", "Weak shields and armor"]
+    },
+    {
+      "id": "ship_diamondback_explorer",
+      "name": "Diamondback Explorer",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Deep-Space Exploration",
+      "size": "Small",
+      "description": "A fan-favorite exploration vessel, the DBX boasts excellent jump range and rugged durability. It's a top choice for Guardian site runs and solo expeditions into the black.",
+      "strengths": ["Excellent jump range", "Small size", "Cheap to outfit"],
+      "weaknesses": ["Tight internals", "Not suitable for combat"]
+    },
+    {
+      "id": "ship_asp_scout",
+      "name": "Asp Scout",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Light Explorer",
+      "size": "Medium",
+      "description": "The Asp Scout is the lesser sibling of the Explorer variant, often criticized for its underwhelming performance. However, it's still used by budget-conscious Commanders.",
+      "strengths": ["Decent heat efficiency", "Compact size"],
+      "weaknesses": ["Poor hardpoints", "Limited internal capacity", "Underpowered overall"]
+    },
+    {
+      "id": "ship_asp_explorer",
+      "name": "Asp Explorer",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Long-Range Exploration",
+      "size": "Medium",
+      "description": "A legendary exploration ship, the Asp Explorer is known for its massive jump range, strong hull, and multi-role potential. It’s been used in most major galaxy-wide expeditions.",
+      "strengths": ["Excellent jump range", "Solid internal space", "Good visibility"],
+      "weaknesses": ["Not the best in combat", "Limited shields"]
+    },
+    {
+      "id": "ship_krait_phantom",
+      "name": "Krait Phantom",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Exploration / Multipurpose",
+      "size": "Medium",
+      "description": "A stripped-down version of the Krait Mk II, the Phantom sacrifices firepower for speed, jump range, and internal room—making it an ideal deep-space vessel.",
+      "strengths": ["Fast", "Great jump range", "Excellent for explorers"],
+      "weaknesses": ["Minimal combat potential", "Weaker shields than Krait Mk II"]
+    },
+    {
+      "id": "ship_mandalay",
+      "name": "Mandalay",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Modern Explorer",
+      "size": "Medium",
+      "description": "The Mandalay is Lakon's next-gen explorer, intended to replace the Asp Scout with better jump range, improved cockpit visibility, and a rebalanced internal layout.",
+      "strengths": ["Modern internals", "Improved jump range", "Optimized for scanners and long expeditions"],
+      "weaknesses": ["Still not a fighter", "Limited combat hardpoints"]
+    }
+  ]
+  

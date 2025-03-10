@@ -1,0 +1,89 @@
+[
+    {
+        "id": "superpower_alliance",
+        "name": "Alliance",
+        "type": "superpower",
+        "capital": "Alioth",
+        "government": "Parliamentary Federation",
+        "leader": "Prime Minister Edmund Mahon",
+        "description": "The Alliance is a coalition of independent factions that work together to resist the influence of the Federation and Empire. It is more decentralized, allowing its member systems to retain greater autonomy.",
+        "military": "The Alliance Defense Force (ADF) operates a fleet of specialized combat ships, such as the Chieftain and Challenger, designed to counter Thargoid threats.",
+        "culture": "Unlike the other superpowers, the Alliance values diplomatic solutions and economic cooperation over military force."
+      },
+      {
+        "id": "superpower_empire",
+        "name": "Empire",
+        "type": "superpower",
+        "capital": "Achenar",
+        "government": "Imperial Monarchy",
+        "leader": "Emperor Arissa Lavigny-Duval",
+        "description": "The Empire is a neo-feudal society led by the Emperor and noble houses. Imperial citizens value honor, tradition, and personal achievement, while the military maintains its power through the elite Imperial Navy.",
+        "ranks": [
+          {"rank": 1, "title": "Outsider"},
+          {"rank": 2, "title": "Serf"},
+          {"rank": 3, "title": "Master"},
+          {"rank": 4, "title": "Squire"},
+          {"rank": 5, "title": "Knight"},
+          {"rank": 6, "title": "Lord"},
+          {"rank": 7, "title": "Baron"},
+          {"rank": 8, "title": "Viscount"},
+          {"rank": 9, "title": "Count"},
+          {"rank": 10, "title": "Earl"},
+          {"rank": 11, "title": "Marquis"},
+          {"rank": 12, "title": "Duke"},
+          {"rank": 13, "title": "Prince"},
+          {"rank": 14, "title": "King"}
+        ],
+        "notable_corporations": [
+          "Gutamaya",
+          "Achenar Research Council"
+        ],
+        "military": "The Imperial Navy enforces the Emperor’s rule and maintains control through the use of Majestic-class Interdictors, heavily armed capital ships.",
+        "culture": "Imperial citizens follow a patron-client system, where those of lower status pledge loyalty to nobles in exchange for protection and advancement."
+      },
+      {
+        "id": "superpower_federation",
+        "name": "Federation",
+        "type": "superpower",
+        "capital": "Sol",
+        "government": "Federal Democracy",
+        "leader": "President Zachary Hudson",
+        "description": "The Federation is a powerful and highly militarized democracy that spans thousands of systems. It is driven by corporate interests and governed by a Congress, led by the President and Shadow President. The Federal Navy enforces law and order, maintaining the Federation's dominance through military power and economic influence.",
+        "ranks": [
+          {"rank": 1, "title": "Recruit"},
+          {"rank": 2, "title": "Cadet"},
+          {"rank": 3, "title": "Midshipman"},
+          {"rank": 4, "title": "Petty Officer"},
+          {"rank": 5, "title": "Chief Petty Officer"},
+          {"rank": 6, "title": "Warrant Officer"},
+          {"rank": 7, "title": "Ensign"},
+          {"rank": 8, "title": "Lieutenant"},
+          {"rank": 9, "title": "Lt. Commander"},
+          {"rank": 10, "title": "Post Commander"},
+          {"rank": 11, "title": "Post Captain"},
+          {"rank": 12, "title": "Rear Admiral"},
+          {"rank": 13, "title": "Vice Admiral"},
+          {"rank": 14, "title": "Admiral"}
+        ],
+        "notable_corporations": [
+          "Core Dynamics",
+          "Sirius Corporation",
+          "Saud Kruger"
+        ],
+        "military": "The Federal Navy operates under strict command structures and deploys massive capital ships, such as the Farragut-class Battlecruiser, to enforce its authority.",
+        "culture": "Citizens of the Federation enjoy democratic rights but live under heavy corporate influence, where megacorporations often dictate policies."
+      },
+      {
+        "id": "superpower_independents",
+        "name": "Independent Powers",
+        "type": "superpower",
+        "description": "Not all systems belong to a superpower. Some remain independent, ruled by local factions that form trade networks, alliances, or pirate syndicates.",
+        "notable_factions": [
+          "Sirius Corporation",
+          "Colonia Council",
+          "The Dark Wheel",
+          "Kumo Crew"
+        ],
+        "influence": "Independent powers control a vast number of systems, some of which hold critical trade routes and scientific research stations."
+      }      
+]

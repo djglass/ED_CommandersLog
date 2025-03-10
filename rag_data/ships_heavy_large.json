@@ -1,0 +1,43 @@
+[
+    {
+      "id": "ship_type_9_heavy",
+      "name": "Type-9 Heavy",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Bulk Cargo Transport",
+      "size": "Large",
+      "description": "The Type-9 Heavy is the definitive space truck. It features massive cargo capacity and is a staple in the cargo hauling and mining support scenes.",
+      "strengths": ["Enormous cargo hold", "Low cost per ton", "Great for mining operations"],
+      "weaknesses": ["Terrible maneuverability", "Barely armed", "Vulnerable without escorts"]
+    },
+    {
+      "id": "ship_type_10_defender",
+      "name": "Type-10 Defender",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Combat Support / Multirole",
+      "size": "Large",
+      "description": "A modified combat version of the Type-9, the Type-10 Defender is designed to absorb and return fire in Thargoid encounters and high-threat CZs.",
+      "strengths": ["Excellent hardpoint coverage", "Tough hull", "Great for anti-xeno loadouts"],
+      "weaknesses": ["Still slow", "Suboptimal jump range", "Needs engineering to perform"]
+    },
+    {
+      "id": "ship_anaconda",
+      "name": "Anaconda",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Heavy Multipurpose / Exploration",
+      "size": "Large",
+      "description": "The Anaconda is one of the most iconic ships in the galaxy. Capable of nearly every role, it boasts incredible jump range, massive internal space, and serious firepower.",
+      "strengths": ["Top-tier jump range", "Strong firepower", "Huge internals"],
+      "weaknesses": ["Expensive to outfit", "Large rebuy cost", "Slow to maneuver"]
+    },
+    {
+      "id": "ship_beluga_liner",
+      "name": "Beluga Liner",
+      "manufacturer": "Saud Kruger",
+      "role": "Luxury Passenger Transport",
+      "size": "Large",
+      "description": "The Beluga is the premier luxury vessel, catering to the elite. Though spacious and elegant, it requires careful piloting and internal rework to shine.",
+      "strengths": ["Tons of passenger capacity", "Stylish as hell", "Low heat build"],
+      "weaknesses": ["Low agility", "Hard to dock", "Odd internals without modding"]
+    }
+  ]
+  

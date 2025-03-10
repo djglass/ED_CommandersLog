@@ -1,0 +1,83 @@
+[
+    {
+      "id": "ship_vulture",
+      "name": "Vulture",
+      "manufacturer": "Core Dynamics",
+      "role": "Heavy Fighter",
+      "size": "Small",
+      "description": "The Vulture is a powerhouse of a fighter, equipped with two large hardpoints and exceptional agility. It punches well above its weight class in combat zones and bounty hunting.",
+      "strengths": ["Two large hardpoints", "Incredible maneuverability", "Small target profile"],
+      "weaknesses": ["Power management is tight", "Limited internals", "Short jump range"]
+    },
+    {
+      "id": "ship_mamba",
+      "name": "Mamba",
+      "manufacturer": "Zorgon Peterson",
+      "role": "Interdiction / Strike Fighter",
+      "size": "Medium",
+      "description": "The Mamba is an ultra-fast combat ship with high burst damage potential. Designed for hit-and-run tactics, it excels at chasing down fleeing targets.",
+      "strengths": ["Extremely fast", "High DPS", "Stylish as hell"],
+      "weaknesses": ["Weak lateral thrusters", "Tight heat management", "Glass cannon"]
+    },
+    {
+      "id": "ship_fer_de_lance",
+      "name": "Fer-de-Lance",
+      "manufacturer": "Gutamaya",
+      "role": "Luxury Combat",
+      "size": "Medium",
+      "description": "Combining luxury with lethality, the Fer-de-Lance is a favorite among PvP pilots. With one huge hardpoint and excellent speed, it’s a duelist’s dream.",
+      "strengths": ["Huge hardpoint", "Good speed", "Great for PvP"],
+      "weaknesses": ["Limited internals", "Requires skillful flying", "Can overheat quickly"]
+    },
+    {
+      "id": "ship_krait_mk_ii",
+      "name": "Krait Mk II",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Multirole Combat",
+      "size": "Medium",
+      "description": "The Krait Mk II is a balanced combat ship with a strong hardpoint layout, fighter bay, and cargo space. A top-tier choice for mission running, bounty hunting, and CZs.",
+      "strengths": ["Fighter hangar", "Good firepower layout", "Solid internals"],
+      "weaknesses": ["Larger profile", "Moderate maneuverability"]
+    },
+    {
+      "id": "ship_alliance_chieftain",
+      "name": "Alliance Chieftain",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Surface Combat / Brawler",
+      "size": "Medium",
+      "description": "The Alliance Chieftain is a hull-tank bruiser. Built to stay in the fight, it performs best under fire and thrives in close-quarters brawls.",
+      "strengths": ["Very strong hull", "Thrives under fire", "Engineered for combat"],
+      "weaknesses": ["Weaker shields", "Drinks fuel", "Best with engineering"]
+    },
+    {
+      "id": "ship_alliance_challenger",
+      "name": "Alliance Challenger",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Tanky Combat Ship",
+      "size": "Medium",
+      "description": "The Challenger is a slightly less nimble but tougher version of the Chieftain, offering improved internals and defensive capabilities.",
+      "strengths": ["Thicker armor than Chieftain", "Flexible internals"],
+      "weaknesses": ["Less agile", "Requires good pip management"]
+    },
+    {
+      "id": "ship_alliance_crusader",
+      "name": "Alliance Crusader",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Combat Support",
+      "size": "Medium",
+      "description": "The Crusader sacrifices some firepower for a fighter bay, making it ideal for wing support and multi-crew combat.",
+      "strengths": ["Has a fighter bay", "Good internals", "Reliable support ship"],
+      "weaknesses": ["Reduced firepower", "Sluggish handling"]
+    },
+    {
+      "id": "ship_python_mk_ii",
+      "name": "Python Mk II",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Heavy Combat / Gunship",
+      "size": "Medium",
+      "description": "The Python Mk II is a combat-tuned variant of the original Python. It trades cargo space and versatility for better armor, improved hardpoint placement, and enhanced cooling.",
+      "strengths": ["Superior firepower to original Python", "Reinforced armor", "Tactical internals"],
+      "weaknesses": ["Not multipurpose", "Expensive", "Needs strong powerplant"]
+    }
+  ]
+  

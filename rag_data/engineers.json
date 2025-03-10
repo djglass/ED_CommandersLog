@@ -1,0 +1,164 @@
+[
+    {
+      "id": "engineer_felicity_farseer",
+      "name": "Felicity Farseer",
+      "location": "Farseer Inc, Deciat",
+      "affiliation": "Independent",
+      "specializations": ["Frame Shift Drive", "Thrusters", "Sensors"],
+      "unlock_requirements": "Achieve Explorer rank Scout or higher, and provide 1 Meta-Alloy.",
+      "description": "A former Federal Navy propulsion specialist turned explorer, Felicity is renowned for FSD upgrades. A first stop for nearly every explorer."
+    },
+    {
+      "id": "engineer_elvira_martuuk",
+      "name": "Elvira Martuuk",
+      "location": "Martuuk's Legacy, Khun",
+      "affiliation": "Independent",
+      "specializations": ["Frame Shift Drive", "Shield Generators"],
+      "unlock_requirements": "Scan 3 system beacons and provide 1 Soontill Relic.",
+      "description": "A former intelligence operative in exile, Elvira specializes in long-range FSD tuning and shield systems."
+    },
+    {
+      "id": "engineer_marco_qwent",
+      "name": "Marco Qwent",
+      "location": "Qwent Research Base, Sirius",
+      "affiliation": "Sirius Corporation",
+      "specializations": ["Power Plants", "Sensors", "FSD Boosters"],
+      "unlock_requirements": "Gain Sirius system permit and provide 25 Modular Terminals.",
+      "description": "A Sirius Corporation engineer who focuses on energy systems. Known for corporate ties and complex unlock chains."
+    },
+    {
+      "id": "engineer_professor_palin",
+      "name": "Professor Palin",
+      "location": "Abel Laboratory, Arque",
+      "affiliation": "Independent",
+      "specializations": ["Thrusters", "Frame Shift Drive"],
+      "unlock_requirements": "Travel more than 5,000 light-years and provide 25 Unknown Sensor Fragments.",
+      "description": "One of the galaxy’s foremost propulsion experts. Works extensively with alien tech and experimental drives."
+    },
+    {
+      "id": "engineer_the_dweller",
+      "name": "The Dweller",
+      "location": "Black Hide, Wyrd",
+      "affiliation": "Independent",
+      "specializations": ["Power Distributors", "Beam Lasers"],
+      "unlock_requirements": "Sell goods at 5 different black markets.",
+      "description": "A shadowy technician with deep ties to the criminal underworld. Offers power distribution upgrades and laser tuning."
+    },
+    {
+      "id": "engineer_tod_mcquinn",
+      "name": "Tod 'The Blaster' McQuinn",
+      "location": "McQuinn Installation, Wolf 397",
+      "affiliation": "Federation",
+      "specializations": ["Multi-Cannons", "Cannons", "Fragment Cannons"],
+      "unlock_requirements": "Achieve Combat rank Novice and provide 15 Combat Bonds.",
+      "description": "A former mercenary turned weapons expert, Tod provides kinetic upgrades for bounty hunters and combat specialists."
+    },
+    {
+      "id": "engineer_liz_ryder",
+      "name": "Liz Ryder",
+      "location": "Demolition Unlimited, Eurybia",
+      "affiliation": "Independent",
+      "specializations": ["Missile Racks", "Seeker Missiles", "Torpedoes"],
+      "unlock_requirements": "Gain rep with Eurybia Blue Mafia and provide 200,000 Cr bounty vouchers.",
+      "description": "A munitions designer known for her explosive upgrades and anti-authority leanings."
+    },
+    {
+      "id": "engineer_didi_vatermann",
+      "name": "Didi Vatermann",
+      "location": "Vatermann LLC, Leesti",
+      "affiliation": "Independent",
+      "specializations": ["Shield Boosters", "Shield Generators"],
+      "unlock_requirements": "Gain reputation and deliver 50 units of Lavian Brandy.",
+      "description": "Specialist in personal defense systems. Works with both law-abiding Commanders and smugglers."
+    },
+    {
+      "id": "engineer_selene_jean",
+      "name": "Selene Jean",
+      "location": "Prospect's Deep, Kuk",
+      "affiliation": "Independent",
+      "specializations": ["Hull Reinforcement", "Armor Plating"],
+      "unlock_requirements": "Mine 500 tons of ore and provide 1 Painite.",
+      "description": "A legendary miner and metallurgist. Known for top-tier hull strengthening techniques."
+    },
+    {
+      "id": "engineer_lei_cheung",
+      "name": "Lei Cheung",
+      "location": "Trader's Rest, Laksak",
+      "affiliation": "Independent",
+      "specializations": ["Shield Generators", "Shield Boosters", "Sensors"],
+      "unlock_requirements": "Trade at 50 markets and provide 200 tons of Gold.",
+      "description": "A trader-engineer hybrid who upgrades defensive systems. Dislikes pirates but tolerates most Commanders."
+    },
+    {
+      "id": "engineer_ram_tah",
+      "name": "Ram Tah",
+      "location": "Phoenix Base, Meene",
+      "affiliation": "Independent",
+      "specializations": ["Scanners", "Xeno-tech", "Limpets"],
+      "unlock_requirements": "Provide 50 Classified Scan Databanks.",
+      "description": "A scientist obsessed with alien civilizations, Ram Tah provides cutting-edge scanner and data analysis tech."
+    },
+    {
+      "id": "engineer_broo_tarquin",
+      "name": "Broo Tarquin",
+      "location": "Broo's Legacy, Muang",
+      "affiliation": "Empire",
+      "specializations": ["Laser Weapons"],
+      "unlock_requirements": "Combat rank Competent or higher and deliver 50 units of Fujin Tea.",
+      "description": "A combat pilot turned recluse. His laser weapon tuning is feared and respected across the galaxy."
+    },
+    {
+      "id": "engineer_lori_jameson",
+      "name": "Lori Jameson",
+      "location": "Jameson Base, Shinrarta Dezhra",
+      "affiliation": "Pilots Federation",
+      "specializations": ["Life Support", "Sensors", "Scanners"],
+      "unlock_requirements": "Achieve Elite rank in any discipline.",
+      "description": "Descendant of legendary pilot John Jameson. Only accessible to Elite-ranked pilots who hold Founder's World access."
+    },
+    {
+      "id": "engineer_zacariah_nemo",
+      "name": "Zacariah Nemo",
+      "location": "Nemo Cyber Party Base, Yoru",
+      "affiliation": "Independent",
+      "specializations": ["Multi-Cannons", "Fragment Cannons", "Plasma Accelerators"],
+      "unlock_requirements": "Friendly with Party of Yoru and deliver 25 Xihe Companions.",
+      "description": "An eccentric weapons expert with a flair for the dramatic and the destructive."
+    },
+    {
+      "id": "engineer_mel_brandon",
+      "name": "Mel Brandon",
+      "location": "The Brig, Colonia (Luchtaine)",
+      "affiliation": "Independent",
+      "specializations": ["FSD", "Shields", "Thrusters", "Weapons"],
+      "unlock_requirements": "Gain Colonia Council invitation and provide 100,000 Cr bounty vouchers.",
+      "description": "A top-tier Colonia-based engineer for combat and travel-focused Commanders away from the Bubble."
+    },
+    {
+      "id": "engineer_etienne_dorn",
+      "name": "Etienne Dorn",
+      "location": "Kraken's Retreat, Colonia (Los)",
+      "affiliation": "Independent",
+      "specializations": ["Sensors", "Power Plants", "Power Distributors", "Life Support"],
+      "unlock_requirements": "Provide 25 Sensor Fragments.",
+      "description": "A mysterious and reclusive engineer. Known for enhancing survival systems for deep-space explorers."
+    },
+    {
+      "id": "engineer_colonel_bris_dekker",
+      "name": "Colonel Bris Dekker",
+      "location": "Dekker's Yard, Sol",
+      "affiliation": "Federation",
+      "specializations": ["FSD Interdictors", "FSD"],
+      "unlock_requirements": "Friendly with Federation and provide 1 million credits in Federal Combat Bonds.",
+      "description": "A retired Federal officer with deep expertise in interdiction and hyperspace manipulation technologies."
+    },
+    {
+      "id": "engineer_the_sarge",
+      "name": "The Sarge",
+      "location": "The Beach, Beta-3 Tucani",
+      "affiliation": "Federation",
+      "specializations": ["Cannons", "Railguns", "Limpets"],
+      "unlock_requirements": "Reach Federal Navy Midshipman rank and provide 50 units of Aberrant Shield Pattern Analysis.",
+      "description": "A grizzled military vet who upgrades heavy weapons and limpet control systems. All business, no frills."
+    }
+  ]  

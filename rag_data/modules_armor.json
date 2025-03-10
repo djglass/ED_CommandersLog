@@ -1,0 +1,59 @@
+[
+    {
+      "id": "armor_lightweight",
+      "name": "Lightweight Alloy Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Standard hull fitted to most stock ships. Offers minimal protection but is extremely light, maximizing speed and jump range.",
+      "common_uses": ["Exploration", "Budget builds", "Speed runners"]
+    },
+    {
+      "id": "armor_reinforced",
+      "name": "Reinforced Alloy Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "An upgrade over lightweight alloy, reinforced hull provides modest protection without sacrificing too much speed or range.",
+      "common_uses": ["Mid-tier combat", "General multipurpose"]
+    },
+    {
+      "id": "armor_mirrored",
+      "name": "Mirrored Composite Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Mirrored composite hull is optimized to resist thermal damage (e.g., lasers and plasma). It has reduced kinetic resistance.",
+      "common_uses": ["Combat vs. laser-heavy enemies", "Thermal defense builds"]
+    },
+    {
+      "id": "armor_reactive",
+      "name": "Reactive Composite Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Reactive composite hull provides superior kinetic resistance, ideal for defense against ballistic and multi-cannon weapons.",
+      "common_uses": ["Hull tank builds", "Kinetic defense", "CZ survival"]
+    },
+    {
+      "id": "armor_military",
+      "name": "Military Grade Composite",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Military composite is a well-rounded upgrade used in many combat ships. It offers strong protection against all damage types and is favored by bounty hunters and PvP pilots.",
+      "common_uses": ["Combat builds", "Bounty hunting", "Multirole tanking"]
+    },
+    {
+      "id": "module_hrp",
+      "name": "Hull Reinforcement Package (HRP)",
+      "category": "Armor",
+      "module_type": "Reinforcement",
+      "description": "HRPs add additional hull hitpoints to your ship. They are internal modules stacked on top of the base armor to absorb damage before critical systems are hit.",
+      "common_uses": ["Hull tanking", "PvP combat", "Thargoid resistance builds"]
+    },
+    {
+      "id": "module_mrp",
+      "name": "Module Reinforcement Package (MRP)",
+      "category": "Armor",
+      "module_type": "Reinforcement",
+      "description": "MRPs protect internal modules from taking damage when the hull is breached. They're crucial for PvP, AX combat, and endurance builds.",
+      "common_uses": ["Protect power plant", "Combat survivability", "Critical module defense"]
+    }
+  ]
+  

@@ -1,0 +1,73 @@
+[
+    {
+      "id": "ship_type_6_transporter",
+      "name": "Type-6 Transporter",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Light Cargo Transport",
+      "size": "Medium",
+      "description": "A dependable trader, the Type-6 offers good cargo capacity at a low price. It's a great choice for newer pilots looking to scale up their cargo runs.",
+      "strengths": ["Affordable", "Decent jump range", "Low operating cost"],
+      "weaknesses": ["Weak shields", "No combat capability", "Large profile for its size"]
+    },
+    {
+      "id": "ship_type_7_transporter",
+      "name": "Type-7 Transporter",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Bulk Trader",
+      "size": "Medium",
+      "description": "The Type-7 is a dedicated cargo hauler designed for maximum transport capacity on a medium pad. It's commonly used for mining support and mid-level trading.",
+      "strengths": ["Large cargo hold", "Cheap to insure", "Good for mining support"],
+      "weaknesses": ["Weak maneuvering", "Paper-thin defenses", "Long docking time"]
+    },
+    {
+      "id": "ship_type_8_transporter",
+      "name": "Type-8 Transporter",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Heavy Multipurpose",
+      "size": "Medium",
+      "description": "The Type-8 is the spiritual successor to the Type-7, offering better internals, stronger defensive capability, and a fighter bay. It's ideal for bulk transport in dangerous regions.",
+      "strengths": ["Improved armor and shields", "Optional fighter bay", "Large cargo space"],
+      "weaknesses": ["Still handles like a brick", "Not a combat ship", "Requires engineering to shine"]
+    },
+    {
+      "id": "ship_keelback",
+      "name": "Keelback",
+      "manufacturer": "Lakon Spaceways",
+      "role": "Utility Trader / Fighter Carrier",
+      "size": "Medium",
+      "description": "A hybrid trader with access to a fighter bay, the Keelback is used for mining, support roles, and light transport missions. Its flexibility makes it a favorite among mission runners.",
+      "strengths": ["Fighter bay on a medium pad", "Durable hull", "Versatile build options"],
+      "weaknesses": ["Slow", "Limited internals", "Underwhelming weapon layout"]
+    },
+    {
+      "id": "ship_python",
+      "name": "Python",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Multipurpose",
+      "size": "Medium",
+      "description": "The Python is a medium-padded juggernaut—capable of combat, trading, mining, or exploration. It's often regarded as the best all-rounder in the galaxy.",
+      "strengths": ["Huge cargo potential on medium pads", "Strong shields", "Great firepower"],
+      "weaknesses": ["Expensive for new players", "Can overheat under load", "Takes finesse to fly well"]
+    },
+    {
+      "id": "ship_orca",
+      "name": "Orca",
+      "manufacturer": "Saud Kruger",
+      "role": "Passenger Transport / Luxury",
+      "size": "Medium",
+      "description": "The Orca is a stylish Saud Kruger passenger liner used for sightseeing and luxury tours. It’s sleek, fast, and easily modded for exploration or stealth transport.",
+      "strengths": ["Fast", "Great cockpit visibility", "Low heat profile"],
+      "weaknesses": ["Limited hardpoints", "No utility mounts", "Niche internals"]
+    },
+    {
+      "id": "ship_dolphin",
+      "name": "Dolphin",
+      "manufacturer": "Saud Kruger",
+      "role": "Luxury Transport / Exploration",
+      "size": "Small",
+      "description": "The Dolphin is the smallest of the Saud Kruger luxury vessels. Often used for light passenger runs, it's also a surprising favorite among explorers for its heat efficiency.",
+      "strengths": ["Very efficient heat dissipation", "Quiet engine signature", "Excellent cockpit view"],
+      "weaknesses": ["Limited hardpoints", "Lower cargo space", "Requires precise outfitting"]
+    }
+  ]
+  

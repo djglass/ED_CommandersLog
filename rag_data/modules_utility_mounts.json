@@ -1,0 +1,75 @@
+[
+    {
+      "id": "utility_shield_booster",
+      "name": "Shield Booster",
+      "category": "Utility Mount",
+      "module_type": "Defensive Enhancement",
+      "description": "Shield boosters increase your total shield strength. They’re a cornerstone of shield-tank builds and widely used in both PvP and PvE combat.",
+      "common_uses": ["Combat tanking", "Bounty hunting", "CZ survivability"]
+    },
+    {
+      "id": "utility_chaff_launcher",
+      "name": "Chaff Launcher",
+      "category": "Utility Mount",
+      "module_type": "Countermeasure",
+      "description": "Chaff launchers distort your heat and shield signature, throwing off gimballed and turreted weapons. An essential defensive tool in evasive combat.",
+      "common_uses": ["Gimballed weapon counter", "PvP evasion", "Escape builds"]
+    },
+    {
+      "id": "utility_heat_sink_launcher",
+      "name": "Heat Sink Launcher",
+      "category": "Utility Mount",
+      "module_type": "Heat Management",
+      "description": "Heat sinks rapidly vent heat from your ship. Useful for silent running, exploration near stars, or to prevent module damage from overheating.",
+      "common_uses": ["Exploration", "Silent running", "Power plant preservation"]
+    },
+    {
+      "id": "utility_point_defense",
+      "name": "Point Defense",
+      "category": "Utility Mount",
+      "module_type": "Projectile Defense",
+      "description": "Point defense turrets automatically shoot down incoming missiles and hatch breaker limpets. They are passive modules that activate when needed.",
+      "common_uses": ["Defense against missiles", "Cargo protection", "PvP utility"]
+    },
+    {
+      "id": "utility_kill_warrant_scanner",
+      "name": "Kill Warrant Scanner",
+      "category": "Utility Mount",
+      "module_type": "Scanner",
+      "description": "KWS reveals all outstanding bounties on a target across multiple jurisdictions. Maximizes credit income for bounty hunters.",
+      "common_uses": ["Bounty hunting", "Law enforcement RP", "Multi-jurisdiction scans"]
+    },
+    {
+      "id": "utility_manifest_scanner",
+      "name": "Manifest Scanner",
+      "category": "Utility Mount",
+      "module_type": "Scanner",
+      "description": "Scans a ship’s cargo hold, revealing its manifest. Used for piracy, smuggling interdictions, and black market targeting.",
+      "common_uses": ["Piracy", "Smuggler hunting", "Roleplay"]
+    },
+    {
+      "id": "utility_xeno_scanner",
+      "name": "Xeno Scanner",
+      "category": "Utility Mount",
+      "module_type": "Scanner",
+      "description": "A specialized scanner that analyzes Thargoid ships and reveals weak points. Required for efficient anti-xeno combat.",
+      "common_uses": ["Thargoid combat", "AX wing operations", "Science RP"]
+    },
+    {
+      "id": "utility_frame_shift_wake_scanner",
+      "name": "Frame Shift Wake Scanner",
+      "category": "Utility Mount",
+      "module_type": "Scanner",
+      "description": "Allows you to scan high-energy FSD wakes to follow ships that jump to another system. Useful for tracking targets or data gathering.",
+      "common_uses": ["Target tracking", "PvP stalking", "Data collection"]
+    },
+    {
+      "id": "utility_electronic_countermeasure",
+      "name": "Electronic Countermeasure (ECM)",
+      "category": "Utility Mount",
+      "module_type": "Countermeasure",
+      "description": "The ECM pulses your ship with disruptive energy, disabling or scrambling incoming missiles and some limpets. Niche but effective with timing.",
+      "common_uses": ["Missile defense", "Anti-hatch breaker", "PvP utility"]
+    }
+  ]
+  

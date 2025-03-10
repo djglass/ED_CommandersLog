@@ -1,0 +1,92 @@
+[
+    {
+      "id": "ship_sidewinder_mk_i",
+      "name": "Sidewinder Mk I",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Starter Ship",
+      "size": "Small",
+      "description": "The Sidewinder Mk I is the default starter ship provided to all new pilots. While lightly armed and fragile, it is agile and cost-effective, perfect for training and short-range missions.",
+      "strengths": ["Free on rebuy", "Agile", "Versatile"],
+      "weaknesses": ["Weak shields", "Limited internals", "Short jump range"]
+    },
+    {
+      "id": "ship_eagle_mk_ii",
+      "name": "Eagle Mk II",
+      "manufacturer": "Core Dynamics",
+      "role": "Light Fighter",
+      "size": "Small",
+      "description": "The Eagle Mk II is a fast and nimble ship often used for combat training and bounty hunting. While fragile, its maneuverability is unmatched among small ships.",
+      "strengths": ["Very agile", "Great for dogfighting", "Low cost"],
+      "weaknesses": ["Weak hull", "Small internal space", "Low survivability"]
+    },
+    {
+      "id": "ship_hauler",
+      "name": "Hauler",
+      "manufacturer": "Zorgon Peterson",
+      "role": "Light Cargo Transport",
+      "size": "Small",
+      "description": "The Hauler is an early-game cargo ship with excellent jump range and low cost. It can also be outfitted as an inexpensive explorer.",
+      "strengths": ["Excellent jump range", "Affordable", "Great for exploration"],
+      "weaknesses": ["Very limited weapons", "Weak shields", "Low cargo space"]
+    },
+    {
+      "id": "ship_adder",
+      "name": "Adder",
+      "manufacturer": "Zorgon Peterson",
+      "role": "Multipurpose",
+      "size": "Small",
+      "description": "The Adder is a balanced multipurpose ship capable of light combat, trading, and short-range exploration. It's a solid step up from the Hauler or Sidewinder.",
+      "strengths": ["Flexible internals", "Inexpensive", "Surprisingly tanky"],
+      "weaknesses": ["Low top speed", "Limited hardpoints"]
+    },
+    {
+      "id": "ship_viper_mk_iii",
+      "name": "Viper Mk III",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Combat",
+      "size": "Small",
+      "description": "The Viper Mk III is a nimble and affordable combat ship, ideal for bounty hunting and interdictions. Its iconic profile and speed make it a staple in security fleets.",
+      "strengths": ["High speed", "Strong burst DPS", "Cheap rebuy"],
+      "weaknesses": ["Weak armor", "Poor internals"]
+    },
+    {
+      "id": "ship_viper_mk_iv",
+      "name": "Viper Mk IV",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Heavy Combat",
+      "size": "Small",
+      "description": "The Viper Mk IV trades some of the Mk III’s speed for more armor and module slots. It’s a rugged brawler that can take hits while delivering steady firepower.",
+      "strengths": ["Better durability than Mk III", "Extra internals"],
+      "weaknesses": ["Slower than Mk III", "Still limited overall"]
+    },
+    {
+      "id": "ship_cobra_mk_iii",
+      "name": "Cobra Mk III",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Multipurpose",
+      "size": "Small",
+      "description": "The legendary Cobra Mk III is one of the most versatile and iconic ships in the galaxy. It's fast, agile, and capable of taking on almost any role with the right outfitting.",
+      "strengths": ["Fast", "Well-rounded", "Good jump range"],
+      "weaknesses": ["Limited internals for late-game roles"]
+    },
+    {
+      "id": "ship_cobra_mk_iv",
+      "name": "Cobra Mk IV",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Multipurpose (Bulkier)",
+      "size": "Small",
+      "description": "The Cobra Mk IV is a more armored version of the Cobra Mk III with additional internals. However, its sluggish maneuverability makes it less favored in combat.",
+      "strengths": ["More internal compartments", "Tougher than Mk III"],
+      "weaknesses": ["Much slower", "Limited availability"]
+    },
+    {
+      "id": "ship_cobra_mk_v",
+      "name": "Cobra Mk V",
+      "manufacturer": "Faulcon DeLacy",
+      "role": "Advanced Multipurpose",
+      "size": "Small",
+      "description": "The Cobra Mk V builds on the legendary legacy of the Cobra series with improved heat management, hardpoint placement, and better loadout flexibility.",
+      "strengths": ["Modernized internals", "Improved heat dispersion", "Strong maneuverability"],
+      "weaknesses": ["Higher cost than Mk III", "Still vulnerable in prolonged fights"]
+    }
+]

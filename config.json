@@ -1,0 +1,5 @@
+{
+  "log_directory": "%USERPROFILE%\\Saved Games\\Frontier Developments\\Elite Dangerous",
+  "lm_studio_api": "http://localhost:1234/v1/completions",
+  "model_name": "deepseek-r1"
+}

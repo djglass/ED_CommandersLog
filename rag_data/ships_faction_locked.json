@@ -1,0 +1,83 @@
+[
+    {
+      "id": "ship_imperial_eagle",
+      "name": "Imperial Eagle",
+      "manufacturer": "Gutamaya",
+      "role": "Light Fighter",
+      "size": "Small",
+      "description": "A sleeker, faster variant of the Core Dynamics Eagle, the Imperial Eagle offers improved speed and shielding, though at a slightly higher cost. It's a favorite among new Empire-aligned combat pilots.",
+      "strengths": ["Fast and agile", "Better shielded than Eagle Mk II", "Stylish Imperial design"],
+      "weaknesses": ["Fragile hull", "Tight internal layout", "Limited utility for long-term progression"]
+    },
+    {
+      "id": "ship_imperial_courier",
+      "name": "Imperial Courier",
+      "manufacturer": "Gutamaya",
+      "role": "Interceptor / High-Speed Fighter",
+      "size": "Small",
+      "description": "The Imperial Courier is a fast, shield-heavy interceptor ideal for hit-and-run tactics. With excellent cockpit visibility and aesthetics, it's a go-to for solo pilots looking for a stylish edge.",
+      "strengths": ["High shields", "Sleek and fast", "Small hitbox"],
+      "weaknesses": ["Low armor", "Awkward hardpoint convergence"]
+    },
+    {
+      "id": "ship_imperial_clipper",
+      "name": "Imperial Clipper",
+      "manufacturer": "Gutamaya",
+      "role": "Fast Multipurpose / Trader / Combat",
+      "size": "Large",
+      "description": "The Imperial Clipper combines luxury and capability. With high speed, a large cargo hold, and reasonable firepower, it's used for fast trading, piracy, and elegant bounty hunting.",
+      "strengths": ["Very fast for a large ship", "Large internals", "Aesthetically elite"],
+      "weaknesses": ["Large landing pad required", "Subpar maneuvering", "Weapon convergence issues"]
+    },
+    {
+      "id": "ship_imperial_cutter",
+      "name": "Imperial Cutter",
+      "manufacturer": "Gutamaya",
+      "role": "Heavy Trader / Flagship",
+      "size": "Large",
+      "description": "The Imperial Cutter is a behemoth of luxury and power. With the highest shield potential of any ship, it’s perfect for bulk trading, piracy, and high-level combat support—if you can fly it.",
+      "strengths": ["Massive shields", "Huge cargo capacity", "Stunning looks"],
+      "weaknesses": ["Terrible maneuverability", "Requires max Empire rank", "Expensive rebuy"]
+    },
+    {
+      "id": "ship_federal_dropship",
+      "name": "Federal Dropship",
+      "manufacturer": "Core Dynamics",
+      "role": "Combat Transport",
+      "size": "Large",
+      "description": "Originally designed for troop transport, the Dropship is a heavily armored, hard-hitting vessel that's ideal for surface operations and combat missions.",
+      "strengths": ["Tough hull", "Large internals", "Good for surface ops"],
+      "weaknesses": ["Clunky", "Mediocre agility", "Niche role"]
+    },
+    {
+      "id": "ship_federal_assault_ship",
+      "name": "Federal Assault Ship",
+      "manufacturer": "Core Dynamics",
+      "role": "Aggressive Fighter",
+      "size": "Medium",
+      "description": "Built for offensive pressure, the FAS is one of the hardest-hitting medium ships. It's fast, tanky, and well-suited to both PvP and PvE combat.",
+      "strengths": ["High armor and DPS", "Great lateral thrusters", "Handles well for size"],
+      "weaknesses": ["Poor heat management", "Low shield capacity"]
+    },
+    {
+      "id": "ship_federal_gunship",
+      "name": "Federal Gunship",
+      "manufacturer": "Core Dynamics",
+      "role": "Turret Support / CZ Tank",
+      "size": "Large",
+      "description": "Designed to control space through volume of fire, the Federal Gunship supports multiple turret hardpoints and a fighter bay. It’s a battlefield anchor in conflict zones.",
+      "strengths": ["Fighter bay", "Turret-friendly layout", "Tanky for its cost"],
+      "weaknesses": ["Low maneuverability", "Requires backup to shine", "High insurance cost"]
+    },
+    {
+      "id": "ship_federal_corvette",
+      "name": "Federal Corvette",
+      "manufacturer": "Core Dynamics",
+      "role": "Heavy Assault",
+      "size": "Large",
+      "description": "The Federation’s ultimate warship, the Corvette mounts two huge hardpoints, thick armor, and powerful shields. It’s a boss killer—but you'll need the rank to command it.",
+      "strengths": ["Two huge hardpoints", "Excellent combat tank", "Top-tier PvE powerhouse"],
+      "weaknesses": ["Short jump range", "Very expensive", "Requires Rear Admiral rank"]
+    }
+  ]
+  
