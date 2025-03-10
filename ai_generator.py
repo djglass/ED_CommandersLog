@@ -2,8 +2,9 @@ import json
 import os
 import logging
 import requests
+import glob
+from datetime import datetime
 from typing import List, Dict, Any
-from log_parser import parse_latest_log
 
 # Set up logging configuration
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -104,7 +105,6 @@ def retrieve_knowledge(session_activities: List[str]) -> str:
         
         # Match materials; assumes each material string has a format like "MaterialName - Description"
         for category, materials in knowledge_base.get("materials", {}).items():
-            # If materials is a list, iterate over each entry
             if isinstance(materials, list):
                 for material in materials:
                     material_name = material.split(" - ")[0]
@@ -170,7 +170,6 @@ def enforce_strict_rules(log_json: Dict[str, Any]) -> Dict[str, Any]:
     Enforces that the output strictly adheres to the required format.
     For example, if 'notable_events' is empty or missing, it will be replaced with the placeholder.
     """
-    # Define strict placeholders as per your prompt.
     placeholders = {
         "star_system": "[REAL STAR SYSTEM FROM LOG]",
         "location": "[REAL LOCATION FROM LOG]",
@@ -187,12 +186,10 @@ def enforce_strict_rules(log_json: Dict[str, Any]) -> Dict[str, Any]:
         ]
     }
     
-    # Check each required key and enforce placeholders if missing or empty.
     for key, placeholder in placeholders.items():
         if key not in log_json or (isinstance(log_json[key], list) and not log_json[key]):
             log_json[key] = placeholder
         elif key == "ship_status":
-            # For nested dictionary, enforce each sub-key.
             for sub_key, sub_placeholder in placeholder.items():
                 if sub_key not in log_json[key] or not log_json[key][sub_key]:
                     log_json[key][sub_key] = sub_placeholder
@@ -214,28 +211,25 @@ def generate_log(cmdr_name: str, log_entry: str, session_activities: List[str]) 
             json={
                 "model": MODEL_NAME,
                 "prompt": prompt,
-                "max_tokens": 400,  # Prevents extra content
-                "temperature": 0.0,  # No creativity
-                "top_p": 0.1,        # Limits randomness
+                "max_tokens": 400,
+                "temperature": 0.0,
+                "top_p": 0.1,
             },
-            timeout=20  # Increased timeout to 20 seconds
+            timeout=20
         )
         response.raise_for_status()
         response_data = response.json()
         log_text: str = response_data["choices"][0]["text"]
         logging.info("Log generated successfully.")
         
-        # Extract and clean JSON from the response text.
         cleaned_log_text = extract_json_string(log_text)
         
-        # Attempt to parse the cleaned text as JSON
         try:
             log_json = json.loads(cleaned_log_text)
         except json.JSONDecodeError as json_err:
             logging.error(f"Error parsing generated log as JSON: {json_err}")
             return "Error: Unable to generate Commander’s Log."
         
-        # Enforce strict output rules via post-processing
         strict_log = enforce_strict_rules(log_json)
         return json.dumps(strict_log, indent=2)
     
@@ -246,11 +240,50 @@ def generate_log(cmdr_name: str, log_entry: str, session_activities: List[str]) 
     
     return "Error: Unable to generate Commander’s Log."
 
+def get_latest_log() -> (str, str, List[str]):
+    """
+    Retrieves the most recent Commander log from the 'rag_data/commander_logs' folder.
+    Extracts the commander name from the header and collects session activities from bullet points.
+    Returns a tuple of (cmdr_name, log_entry, session_activities).
+    """
+    logs_dir = os.path.join(os.path.dirname(__file__), "rag_data", "commander_logs")
+    markdown_files = glob.glob(os.path.join(logs_dir, "*.md"))
+    
+    if not markdown_files:
+        logging.error("No commander log files found.")
+        return "", "", []
+    
+    # Select the latest file based on modification time
+    latest_file = max(markdown_files, key=os.path.getmtime)
+    with open(latest_file, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    # Assume first line contains the commander header: "# Commander <NAME> - Log <DATE>"
+    first_line = content.splitlines()[0]
+    cmdr_name = "Unknown Commander"
+    if first_line.startswith("# Commander"):
+        try:
+            # Example header: "# Commander TOADIE MUDGUTS - Log 2025-03-09"
+            parts = first_line.split()
+            if len(parts) >= 3:
+                cmdr_name = parts[2]
+        except Exception as e:
+            logging.warning(f"Could not parse commander name: {e}")
+    
+    # Extract session activities from bullet points
+    session_activities = []
+    for line in content.splitlines():
+        if line.strip().startswith("- "):
+            # Remove bullet and extra whitespace
+            session_activities.append(line.strip()[2:])
+    
+    return cmdr_name, content, session_activities
+
 if __name__ == "__main__":
-    cmdr_name, log_entry, session_activities, ship_status, powerplay, timestamps = parse_latest_log()
+    cmdr_name, log_entry, session_activities = get_latest_log()
     if log_entry:
         enhanced_log: str = generate_log(cmdr_name, log_entry, session_activities)
         print(f"\n📖 {cmdr_name}’s Enhanced Commander’s Log:\n")
         print(enhanced_log)
     else:
-        print("No valid hyperspace jump or location data found!")
+        print("No valid commander log found!")

@@ -1,0 +1,362 @@
+[
+    {
+      "id": "armor_lightweight",
+      "name": "Lightweight Alloy Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Standard hull fitted to most stock ships. Offers minimal protection but is extremely light, maximizing speed and jump range.",
+      "common_uses": ["Exploration", "Budget builds", "Speed runners"]
+    },
+    {
+      "id": "armor_reinforced",
+      "name": "Reinforced Alloy Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "An upgrade over lightweight alloy, reinforced hull provides modest protection without sacrificing too much speed or range.",
+      "common_uses": ["Mid-tier combat", "General multipurpose"]
+    },
+    {
+      "id": "armor_mirrored",
+      "name": "Mirrored Composite Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Mirrored composite hull is optimized to resist thermal damage (e.g., lasers and plasma). It has reduced kinetic resistance.",
+      "common_uses": ["Combat vs. laser-heavy enemies", "Thermal defense builds"]
+    },
+    {
+      "id": "armor_reactive",
+      "name": "Reactive Composite Hull",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Reactive composite hull provides superior kinetic resistance, ideal for defense against ballistic and multi-cannon weapons.",
+      "common_uses": ["Hull tank builds", "Kinetic defense", "CZ survival"]
+    },
+    {
+      "id": "armor_military",
+      "name": "Military Grade Composite",
+      "category": "Armor",
+      "module_type": "Base Hull",
+      "description": "Military composite is a well-rounded upgrade used in many combat ships. It offers strong protection against all damage types and is favored by bounty hunters and PvP pilots.",
+      "common_uses": ["Combat builds", "Bounty hunting", "Multirole tanking"]
+    },
+    {
+      "id": "module_hrp",
+      "name": "Hull Reinforcement Package (HRP)",
+      "category": "Armor",
+      "module_type": "Reinforcement",
+      "description": "HRPs add additional hull hitpoints to your ship. They are internal modules stacked on top of the base armor to absorb damage before critical systems are hit.",
+      "common_uses": ["Hull tanking", "PvP combat", "Thargoid resistance builds"]
+    },
+    {
+      "id": "module_mrp",
+      "name": "Module Reinforcement Package (MRP)",
+      "category": "Armor",
+      "module_type": "Reinforcement",
+      "description": "MRPs protect internal modules from taking damage when the hull is breached. They're crucial for PvP, AX combat, and endurance builds.",
+      "common_uses": ["Protect power plant", "Combat survivability", "Critical module defense"]
+    },
+    {
+        "id": "module_fsd",
+        "name": "Frame Shift Drive",
+        "category": "Core Internal",
+        "module_type": "Frame Shift Drive",
+        "description": "The Frame Shift Drive (FSD) is the core module responsible for supercruise travel within star systems and hyperspace jumps between them.",
+        "common_uses": ["Jump range optimization", "Exploration builds", "Mission running", "Long-distance travel"]
+      },
+      {
+        "id": "module_power_plant",
+        "name": "Power Plant",
+        "category": "Core Internal",
+        "module_type": "Power Plant",
+        "description": "The power plant supplies energy to all ship systems. A stronger plant allows for more powerful modules and weapons, while better quality plants produce less heat.",
+        "common_uses": ["Combat loadouts", "Heavy firepower ships", "Heat management"]
+      },
+      {
+        "id": "module_thrusters",
+        "name": "Thrusters",
+        "category": "Core Internal",
+        "module_type": "Thrusters",
+        "description": "Thrusters control a ship’s sublight movement, including linear thrust and lateral/vertical maneuvering. Thruster quality affects speed, agility, and boost capabilities.",
+        "common_uses": ["Dogfighting", "Surface landing", "Escape velocity management"]
+      },
+      {
+        "id": "module_power_distributor",
+        "name": "Power Distributor",
+        "category": "Core Internal",
+        "module_type": "Power Distributor",
+        "description": "This module manages power allocation between systems (SYS), engines (ENG), and weapons (WEP). Higher-grade distributors recharge faster and hold larger power reserves.",
+        "common_uses": ["Combat energy management", "Boost chaining", "Sustained weapon fire"]
+      },
+      {
+        "id": "module_life_support",
+        "name": "Life Support",
+        "category": "Core Internal",
+        "module_type": "Life Support",
+        "description": "Life support systems supply breathable atmosphere in the cockpit and suit. If the canopy breaches, it provides emergency oxygen until the ship is repaired or docked.",
+        "common_uses": ["Survivability in combat", "Rebuy-saving backups", "Essential for all ships"]
+      },
+      {
+        "id": "module_sensors",
+        "name": "Sensors",
+        "category": "Core Internal",
+        "module_type": "Sensors",
+        "description": "Sensors control your ability to detect and scan objects in space. Higher-grade sensors increase range and detail, especially useful in scanning or bounty hunting.",
+        "common_uses": ["Target acquisition", "Exploration", "Bounty hunting", "Navigation"]
+      },
+      {
+        "id": "module_fuel_tank",
+        "name": "Fuel Tank",
+        "category": "Core Internal",
+        "module_type": "Fuel Tank",
+        "description": "The fuel tank stores hydrogen fuel used for Frame Shift Drive jumps and thruster operations. Larger tanks allow for longer operations without refueling.",
+        "common_uses": ["Long-range expeditions", "Bulk haulers", "Extended mission durations"]
+      },
+      {
+        "id": "hardpoint_beam_laser",
+        "name": "Beam Laser",
+        "category": "Hardpoint",
+        "module_type": "Laser Weapon",
+        "description": "Beam lasers emit continuous energy beams that quickly deplete enemy shields. They’re most effective against shielded targets but generate high heat.",
+        "common_uses": ["Shield stripping", "Bounty hunting", "Wing combat"]
+      },
+      {
+        "id": "hardpoint_pulse_laser",
+        "name": "Pulse Laser",
+        "category": "Hardpoint",
+        "module_type": "Laser Weapon",
+        "description": "Pulse lasers fire rapid energy bursts and are known for efficiency and heat management. They're ideal for consistent shield damage and versatile builds.",
+        "common_uses": ["General-purpose combat", "Low-heat builds", "Multi-role ships"]
+      },
+      {
+        "id": "hardpoint_burst_laser",
+        "name": "Burst Laser",
+        "category": "Hardpoint",
+        "module_type": "Laser Weapon",
+        "description": "Burst lasers fire 3-shot bursts and offer a middle ground between beams and pulse lasers. They do more damage per burst at higher energy cost.",
+        "common_uses": ["Shield damage", "Medium-range dogfights"]
+      },
+      {
+        "id": "hardpoint_multicannon",
+        "name": "Multi-Cannon",
+        "category": "Hardpoint",
+        "module_type": "Kinetic Weapon",
+        "description": "Multi-cannons fire ballistic projectiles at high rate. They are excellent against hulls and have great ammo efficiency, making them ideal for prolonged fights.",
+        "common_uses": ["Hull damage", "PvE farming", "PvP sustained DPS"]
+      },
+      {
+        "id": "hardpoint_cannon",
+        "name": "Cannon",
+        "category": "Hardpoint",
+        "module_type": "Kinetic Weapon",
+        "description": "Cannons fire heavy rounds that deal massive hull damage on impact. They're most effective against large, slow targets and in close-range engagements.",
+        "common_uses": ["Hull breaking", "Anti-large-ship combat"]
+      },
+      {
+        "id": "hardpoint_railgun",
+        "name": "Railgun",
+        "category": "Hardpoint",
+        "module_type": "Special Weapon",
+        "description": "Railguns fire high-velocity projectiles that ignore some defenses. Used for sniping modules, disabling power plants, and delivering experimental effects.",
+        "common_uses": ["Module sniping", "Powerplay assassination", "PvP meta"]
+      },
+      {
+        "id": "hardpoint_plasma_accelerator",
+        "name": "Plasma Accelerator",
+        "category": "Hardpoint",
+        "module_type": "Plasma Weapon",
+        "description": "Plasma accelerators fire slow-moving energy orbs that deal huge damage to both shields and hull. They're power-hungry and difficult to aim but devastating.",
+        "common_uses": ["Burst damage builds", "Large-ship combat", "Alpha strikes"]
+      },
+      {
+        "id": "hardpoint_fragment_cannon",
+        "name": "Fragment Cannon",
+        "category": "Hardpoint",
+        "module_type": "Shotgun Weapon",
+        "description": "Frag cannons fire high-spread kinetic bursts at short range. Effective in close quarters, especially against hulls or for disabling modules.",
+        "common_uses": ["Close-quarters PvP", "Module damage", "Shield bypass"]
+      },
+      {
+        "id": "hardpoint_mining_laser",
+        "name": "Mining Laser",
+        "category": "Hardpoint",
+        "module_type": "Industrial Tool",
+        "description": "Mining lasers are used to extract raw materials from asteroids. These are non-combat modules essential for all mining operations.",
+        "common_uses": ["Laser mining", "Material gathering"]
+      },
+      {
+        "id": "hardpoint_missile_rack",
+        "name": "Missile Rack",
+        "category": "Hardpoint",
+        "module_type": "Explosive Weapon",
+        "description": "Missile racks deliver targeted explosive payloads. They're good against modules and hulls but limited by ammo and ineffective vs. shields.",
+        "common_uses": ["Module destruction", "Hull cracking", "PvE support"]
+      },
+      {
+        "id": "hardpoint_torpedo_pylon",
+        "name": "Torpedo Pylon",
+        "category": "Hardpoint",
+        "module_type": "Explosive Weapon",
+        "description": "Torpedoes deal massive explosive damage and are often used to destroy power plants or high-value targets. Expensive and ammo-limited.",
+        "common_uses": ["One-hit kills", "Module assassination", "Powerplay PvP"]
+      },
+      {
+        "id": "hardpoint_shock_cannon",
+        "name": "Shock Cannon",
+        "category": "Hardpoint",
+        "module_type": "Experimental Weapon",
+        "description": "Shock Cannons are rapid-fire energy weapons that disrupt flight controls and modules. Limited in range and mostly used for utility or roleplay.",
+        "common_uses": ["Disruption", "PvP harassment", "Experimental builds"]
+      },
+      {
+        "id": "module_fuel_scoop",
+        "name": "Fuel Scoop",
+        "category": "Optional Internal",
+        "module_type": "Fuel Scoop",
+        "description": "A fuel scoop allows a ship to collect hydrogen fuel from stars with a scoopable classification (O, B, A, F, G, K, M). It's essential for long-range travel without constant station stops.",
+        "common_uses": ["Exploration", "Long-distance trading", "Mission chains"]
+      },
+      {
+        "id": "module_cargo_rack",
+        "name": "Cargo Rack",
+        "category": "Optional Internal",
+        "module_type": "Cargo Storage",
+        "description": "Cargo racks determine how much standard cargo your ship can carry. Larger racks are key to trading, mining, and mission hauling.",
+        "common_uses": ["Trading", "Mining", "Delivery missions"]
+      },
+      {
+        "id": "module_passenger_cabin",
+        "name": "Passenger Cabin",
+        "category": "Optional Internal",
+        "module_type": "Passenger Transport",
+        "description": "Passenger cabins allow you to accept transport missions, carrying tourists, refugees, or VIPs to destinations. Available in economy, business, first class, and luxury variants.",
+        "common_uses": ["Passenger missions", "Luxury tourism", "Faction-aligned transports"]
+      },
+      {
+        "id": "module_fighter_hangar",
+        "name": "Fighter Hangar",
+        "category": "Optional Internal",
+        "module_type": "Fighter Bay",
+        "description": "This module stores and launches ship-launched fighters (SLFs). Used in combat support, multi-crew combat, and large ship defense.",
+        "common_uses": ["Combat support", "Multicrew gameplay", "CZ and bounty builds"]
+      },
+      {
+        "id": "module_refinery",
+        "name": "Refinery",
+        "category": "Optional Internal",
+        "module_type": "Mining Support",
+        "description": "The refinery processes raw asteroid fragments into tradable materials. A mandatory module for any mining vessel.",
+        "common_uses": ["Mining builds", "Material farming", "Laser and core mining"]
+      },
+      {
+        "id": "module_limpet_controller_collect",
+        "name": "Collector Limpet Controller",
+        "category": "Optional Internal",
+        "module_type": "Limpet Control",
+        "description": "Collector limpets retrieve cargo, materials, or fragments and bring them to the ship. An essential quality-of-life module for mining or salvage.",
+        "common_uses": ["Mining", "Salvage", "FSS & AX recovery operations"]
+      },
+      {
+        "id": "module_limpet_controller_prospect",
+        "name": "Prospector Limpet Controller",
+        "category": "Optional Internal",
+        "module_type": "Limpet Control",
+        "description": "Prospector limpets analyze asteroids for mineral content and increase yield when deployed. Must-have for core and laser mining.",
+        "common_uses": ["Mining", "Core extraction", "Yield optimization"]
+      },
+      {
+        "id": "module_detailed_surface_scanner",
+        "name": "Detailed Surface Scanner",
+        "category": "Optional Internal",
+        "module_type": "Planetary Scanner",
+        "description": "This module maps planets, revealing landable terrain, geological signals, and biological features. It's also required for exobiology.",
+        "common_uses": ["Exploration", "Exobiology", "Mapping landable worlds"]
+      },
+      {
+        "id": "module_auto_field_maintenance_unit",
+        "name": "Auto Field Maintenance Unit (AFMU)",
+        "category": "Optional Internal",
+        "module_type": "Repair System",
+        "description": "The AFMU can repair most ship modules (except the hull) without docking. It’s often used during deep-space exploration to recover from module wear.",
+        "common_uses": ["Exploration", "Damage control in deep space", "Module repair"]
+      },
+      {
+        "id": "module_shield_cell_bank",
+        "name": "Shield Cell Bank",
+        "category": "Optional Internal",
+        "module_type": "Shield Recharger",
+        "description": "A SCB quickly restores depleted shields by consuming stored energy. It's widely used in PvE combat and some PvP builds.",
+        "common_uses": ["Combat", "Bounty hunting", "Thick shield tank builds"]
+      },
+      {
+        "id": "utility_shield_booster",
+        "name": "Shield Booster",
+        "category": "Utility Mount",
+        "module_type": "Defensive Enhancement",
+        "description": "Shield boosters increase your total shield strength. They’re a cornerstone of shield-tank builds and widely used in both PvP and PvE combat.",
+        "common_uses": ["Combat tanking", "Bounty hunting", "CZ survivability"]
+      },
+      {
+        "id": "utility_chaff_launcher",
+        "name": "Chaff Launcher",
+        "category": "Utility Mount",
+        "module_type": "Countermeasure",
+        "description": "Chaff launchers distort your heat and shield signature, throwing off gimballed and turreted weapons. An essential defensive tool in evasive combat.",
+        "common_uses": ["Gimballed weapon counter", "PvP evasion", "Escape builds"]
+      },
+      {
+        "id": "utility_heat_sink_launcher",
+        "name": "Heat Sink Launcher",
+        "category": "Utility Mount",
+        "module_type": "Heat Management",
+        "description": "Heat sinks rapidly vent heat from your ship. Useful for silent running, exploration near stars, or to prevent module damage from overheating.",
+        "common_uses": ["Exploration", "Silent running", "Power plant preservation"]
+      },
+      {
+        "id": "utility_point_defense",
+        "name": "Point Defense",
+        "category": "Utility Mount",
+        "module_type": "Projectile Defense",
+        "description": "Point defense turrets automatically shoot down incoming missiles and hatch breaker limpets. They are passive modules that activate when needed.",
+        "common_uses": ["Defense against missiles", "Cargo protection", "PvP utility"]
+      },
+      {
+        "id": "utility_kill_warrant_scanner",
+        "name": "Kill Warrant Scanner",
+        "category": "Utility Mount",
+        "module_type": "Scanner",
+        "description": "KWS reveals all outstanding bounties on a target across multiple jurisdictions. Maximizes credit income for bounty hunters.",
+        "common_uses": ["Bounty hunting", "Law enforcement RP", "Multi-jurisdiction scans"]
+      },
+      {
+        "id": "utility_manifest_scanner",
+        "name": "Manifest Scanner",
+        "category": "Utility Mount",
+        "module_type": "Scanner",
+        "description": "Scans a ship’s cargo hold, revealing its manifest. Used for piracy, smuggling interdictions, and black market targeting.",
+        "common_uses": ["Piracy", "Smuggler hunting", "Roleplay"]
+      },
+      {
+        "id": "utility_xeno_scanner",
+        "name": "Xeno Scanner",
+        "category": "Utility Mount",
+        "module_type": "Scanner",
+        "description": "A specialized scanner that analyzes Thargoid ships and reveals weak points. Required for efficient anti-xeno combat.",
+        "common_uses": ["Thargoid combat", "AX wing operations", "Science RP"]
+      },
+      {
+        "id": "utility_frame_shift_wake_scanner",
+        "name": "Frame Shift Wake Scanner",
+        "category": "Utility Mount",
+        "module_type": "Scanner",
+        "description": "Allows you to scan high-energy FSD wakes to follow ships that jump to another system. Useful for tracking targets or data gathering.",
+        "common_uses": ["Target tracking", "PvP stalking", "Data collection"]
+      },
+      {
+        "id": "utility_electronic_countermeasure",
+        "name": "Electronic Countermeasure (ECM)",
+        "category": "Utility Mount",
+        "module_type": "Countermeasure",
+        "description": "The ECM pulses your ship with disruptive energy, disabling or scrambling incoming missiles and some limpets. Niche but effective with timing.",
+        "common_uses": ["Missile defense", "Anti-hatch breaker", "PvP utility"]
+      }
+    ]
