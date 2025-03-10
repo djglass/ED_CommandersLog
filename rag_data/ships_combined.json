@@ -1,0 +1,737 @@
+[
+  {
+    "id": "ship_vulture",
+    "name": "Vulture",
+    "manufacturer": "Core Dynamics",
+    "role": "Heavy Fighter",
+    "size": "Small",
+    "description": "The Vulture is a powerhouse of a fighter, equipped with two large hardpoints and exceptional agility. It punches well above its weight class in combat zones and bounty hunting.",
+    "strengths": [
+      "Two large hardpoints",
+      "Incredible maneuverability",
+      "Small target profile"
+    ],
+    "weaknesses": [
+      "Power management is tight",
+      "Limited internals",
+      "Short jump range"
+    ]
+  },
+  {
+    "id": "ship_mamba",
+    "name": "Mamba",
+    "manufacturer": "Zorgon Peterson",
+    "role": "Interdiction / Strike Fighter",
+    "size": "Medium",
+    "description": "The Mamba is an ultra-fast combat ship with high burst damage potential. Designed for hit-and-run tactics, it excels at chasing down fleeing targets.",
+    "strengths": [
+      "Extremely fast",
+      "High DPS",
+      "Stylish as hell"
+    ],
+    "weaknesses": [
+      "Weak lateral thrusters",
+      "Tight heat management",
+      "Glass cannon"
+    ]
+  },
+  {
+    "id": "ship_fer_de_lance",
+    "name": "Fer-de-Lance",
+    "manufacturer": "Gutamaya",
+    "role": "Luxury Combat",
+    "size": "Medium",
+    "description": "Combining luxury with lethality, the Fer-de-Lance is a favorite among PvP pilots. With one huge hardpoint and excellent speed, it\u2019s a duelist\u2019s dream.",
+    "strengths": [
+      "Huge hardpoint",
+      "Good speed",
+      "Great for PvP"
+    ],
+    "weaknesses": [
+      "Limited internals",
+      "Requires skillful flying",
+      "Can overheat quickly"
+    ]
+  },
+  {
+    "id": "ship_krait_mk_ii",
+    "name": "Krait Mk II",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Multirole Combat",
+    "size": "Medium",
+    "description": "The Krait Mk II is a balanced combat ship with a strong hardpoint layout, fighter bay, and cargo space. A top-tier choice for mission running, bounty hunting, and CZs.",
+    "strengths": [
+      "Fighter hangar",
+      "Good firepower layout",
+      "Solid internals"
+    ],
+    "weaknesses": [
+      "Larger profile",
+      "Moderate maneuverability"
+    ]
+  },
+  {
+    "id": "ship_alliance_chieftain",
+    "name": "Alliance Chieftain",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Surface Combat / Brawler",
+    "size": "Medium",
+    "description": "The Alliance Chieftain is a hull-tank bruiser. Built to stay in the fight, it performs best under fire and thrives in close-quarters brawls.",
+    "strengths": [
+      "Very strong hull",
+      "Thrives under fire",
+      "Engineered for combat"
+    ],
+    "weaknesses": [
+      "Weaker shields",
+      "Drinks fuel",
+      "Best with engineering"
+    ]
+  },
+  {
+    "id": "ship_alliance_challenger",
+    "name": "Alliance Challenger",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Tanky Combat Ship",
+    "size": "Medium",
+    "description": "The Challenger is a slightly less nimble but tougher version of the Chieftain, offering improved internals and defensive capabilities.",
+    "strengths": [
+      "Thicker armor than Chieftain",
+      "Flexible internals"
+    ],
+    "weaknesses": [
+      "Less agile",
+      "Requires good pip management"
+    ]
+  },
+  {
+    "id": "ship_alliance_crusader",
+    "name": "Alliance Crusader",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Combat Support",
+    "size": "Medium",
+    "description": "The Crusader sacrifices some firepower for a fighter bay, making it ideal for wing support and multi-crew combat.",
+    "strengths": [
+      "Has a fighter bay",
+      "Good internals",
+      "Reliable support ship"
+    ],
+    "weaknesses": [
+      "Reduced firepower",
+      "Sluggish handling"
+    ]
+  },
+  {
+    "id": "ship_python_mk_ii",
+    "name": "Python Mk II",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Heavy Combat / Gunship",
+    "size": "Medium",
+    "description": "The Python Mk II is a combat-tuned variant of the original Python. It trades cargo space and versatility for better armor, improved hardpoint placement, and enhanced cooling.",
+    "strengths": [
+      "Superior firepower to original Python",
+      "Reinforced armor",
+      "Tactical internals"
+    ],
+    "weaknesses": [
+      "Not multipurpose",
+      "Expensive",
+      "Needs strong powerplant"
+    ]
+  },
+  {
+    "id": "ship_diamondback_scout",
+    "name": "Diamondback Scout",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Exploration / Light Combat",
+    "size": "Small",
+    "description": "The Diamondback Scout is an entry-level explorer with excellent heat efficiency and strong maneuverability. It\u2019s a budget ship often used for high-risk recon or long-range scans.",
+    "strengths": [
+      "Great heat management",
+      "Low rebuy cost",
+      "Good handling"
+    ],
+    "weaknesses": [
+      "Limited jump range",
+      "Weak shields and armor"
+    ]
+  },
+  {
+    "id": "ship_diamondback_explorer",
+    "name": "Diamondback Explorer",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Deep-Space Exploration",
+    "size": "Small",
+    "description": "A fan-favorite exploration vessel, the DBX boasts excellent jump range and rugged durability. It's a top choice for Guardian site runs and solo expeditions into the black.",
+    "strengths": [
+      "Excellent jump range",
+      "Small size",
+      "Cheap to outfit"
+    ],
+    "weaknesses": [
+      "Tight internals",
+      "Not suitable for combat"
+    ]
+  },
+  {
+    "id": "ship_asp_scout",
+    "name": "Asp Scout",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Light Explorer",
+    "size": "Medium",
+    "description": "The Asp Scout is the lesser sibling of the Explorer variant, often criticized for its underwhelming performance. However, it's still used by budget-conscious Commanders.",
+    "strengths": [
+      "Decent heat efficiency",
+      "Compact size"
+    ],
+    "weaknesses": [
+      "Poor hardpoints",
+      "Limited internal capacity",
+      "Underpowered overall"
+    ]
+  },
+  {
+    "id": "ship_asp_explorer",
+    "name": "Asp Explorer",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Long-Range Exploration",
+    "size": "Medium",
+    "description": "A legendary exploration ship, the Asp Explorer is known for its massive jump range, strong hull, and multi-role potential. It\u2019s been used in most major galaxy-wide expeditions.",
+    "strengths": [
+      "Excellent jump range",
+      "Solid internal space",
+      "Good visibility"
+    ],
+    "weaknesses": [
+      "Not the best in combat",
+      "Limited shields"
+    ]
+  },
+  {
+    "id": "ship_krait_phantom",
+    "name": "Krait Phantom",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Exploration / Multipurpose",
+    "size": "Medium",
+    "description": "A stripped-down version of the Krait Mk II, the Phantom sacrifices firepower for speed, jump range, and internal room\u2014making it an ideal deep-space vessel.",
+    "strengths": [
+      "Fast",
+      "Great jump range",
+      "Excellent for explorers"
+    ],
+    "weaknesses": [
+      "Minimal combat potential",
+      "Weaker shields than Krait Mk II"
+    ]
+  },
+  {
+    "id": "ship_mandalay",
+    "name": "Mandalay",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Modern Explorer",
+    "size": "Medium",
+    "description": "The Mandalay is Lakon's next-gen explorer, intended to replace the Asp Scout with better jump range, improved cockpit visibility, and a rebalanced internal layout.",
+    "strengths": [
+      "Modern internals",
+      "Improved jump range",
+      "Optimized for scanners and long expeditions"
+    ],
+    "weaknesses": [
+      "Still not a fighter",
+      "Limited combat hardpoints"
+    ]
+  },
+  {
+    "id": "ship_imperial_eagle",
+    "name": "Imperial Eagle",
+    "manufacturer": "Gutamaya",
+    "role": "Light Fighter",
+    "size": "Small",
+    "description": "A sleeker, faster variant of the Core Dynamics Eagle, the Imperial Eagle offers improved speed and shielding, though at a slightly higher cost. It's a favorite among new Empire-aligned combat pilots.",
+    "strengths": [
+      "Fast and agile",
+      "Better shielded than Eagle Mk II",
+      "Stylish Imperial design"
+    ],
+    "weaknesses": [
+      "Fragile hull",
+      "Tight internal layout",
+      "Limited utility for long-term progression"
+    ]
+  },
+  {
+    "id": "ship_imperial_courier",
+    "name": "Imperial Courier",
+    "manufacturer": "Gutamaya",
+    "role": "Interceptor / High-Speed Fighter",
+    "size": "Small",
+    "description": "The Imperial Courier is a fast, shield-heavy interceptor ideal for hit-and-run tactics. With excellent cockpit visibility and aesthetics, it's a go-to for solo pilots looking for a stylish edge.",
+    "strengths": [
+      "High shields",
+      "Sleek and fast",
+      "Small hitbox"
+    ],
+    "weaknesses": [
+      "Low armor",
+      "Awkward hardpoint convergence"
+    ]
+  },
+  {
+    "id": "ship_imperial_clipper",
+    "name": "Imperial Clipper",
+    "manufacturer": "Gutamaya",
+    "role": "Fast Multipurpose / Trader / Combat",
+    "size": "Large",
+    "description": "The Imperial Clipper combines luxury and capability. With high speed, a large cargo hold, and reasonable firepower, it's used for fast trading, piracy, and elegant bounty hunting.",
+    "strengths": [
+      "Very fast for a large ship",
+      "Large internals",
+      "Aesthetically elite"
+    ],
+    "weaknesses": [
+      "Large landing pad required",
+      "Subpar maneuvering",
+      "Weapon convergence issues"
+    ]
+  },
+  {
+    "id": "ship_imperial_cutter",
+    "name": "Imperial Cutter",
+    "manufacturer": "Gutamaya",
+    "role": "Heavy Trader / Flagship",
+    "size": "Large",
+    "description": "The Imperial Cutter is a behemoth of luxury and power. With the highest shield potential of any ship, it\u2019s perfect for bulk trading, piracy, and high-level combat support\u2014if you can fly it.",
+    "strengths": [
+      "Massive shields",
+      "Huge cargo capacity",
+      "Stunning looks"
+    ],
+    "weaknesses": [
+      "Terrible maneuverability",
+      "Requires max Empire rank",
+      "Expensive rebuy"
+    ]
+  },
+  {
+    "id": "ship_federal_dropship",
+    "name": "Federal Dropship",
+    "manufacturer": "Core Dynamics",
+    "role": "Combat Transport",
+    "size": "Large",
+    "description": "Originally designed for troop transport, the Dropship is a heavily armored, hard-hitting vessel that's ideal for surface operations and combat missions.",
+    "strengths": [
+      "Tough hull",
+      "Large internals",
+      "Good for surface ops"
+    ],
+    "weaknesses": [
+      "Clunky",
+      "Mediocre agility",
+      "Niche role"
+    ]
+  },
+  {
+    "id": "ship_federal_assault_ship",
+    "name": "Federal Assault Ship",
+    "manufacturer": "Core Dynamics",
+    "role": "Aggressive Fighter",
+    "size": "Medium",
+    "description": "Built for offensive pressure, the FAS is one of the hardest-hitting medium ships. It's fast, tanky, and well-suited to both PvP and PvE combat.",
+    "strengths": [
+      "High armor and DPS",
+      "Great lateral thrusters",
+      "Handles well for size"
+    ],
+    "weaknesses": [
+      "Poor heat management",
+      "Low shield capacity"
+    ]
+  },
+  {
+    "id": "ship_federal_gunship",
+    "name": "Federal Gunship",
+    "manufacturer": "Core Dynamics",
+    "role": "Turret Support / CZ Tank",
+    "size": "Large",
+    "description": "Designed to control space through volume of fire, the Federal Gunship supports multiple turret hardpoints and a fighter bay. It\u2019s a battlefield anchor in conflict zones.",
+    "strengths": [
+      "Fighter bay",
+      "Turret-friendly layout",
+      "Tanky for its cost"
+    ],
+    "weaknesses": [
+      "Low maneuverability",
+      "Requires backup to shine",
+      "High insurance cost"
+    ]
+  },
+  {
+    "id": "ship_federal_corvette",
+    "name": "Federal Corvette",
+    "manufacturer": "Core Dynamics",
+    "role": "Heavy Assault",
+    "size": "Large",
+    "description": "The Federation\u2019s ultimate warship, the Corvette mounts two huge hardpoints, thick armor, and powerful shields. It\u2019s a boss killer\u2014but you'll need the rank to command it.",
+    "strengths": [
+      "Two huge hardpoints",
+      "Excellent combat tank",
+      "Top-tier PvE powerhouse"
+    ],
+    "weaknesses": [
+      "Short jump range",
+      "Very expensive",
+      "Requires Rear Admiral rank"
+    ]
+  },
+  {
+    "id": "ship_type_9_heavy",
+    "name": "Type-9 Heavy",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Bulk Cargo Transport",
+    "size": "Large",
+    "description": "The Type-9 Heavy is the definitive space truck. It features massive cargo capacity and is a staple in the cargo hauling and mining support scenes.",
+    "strengths": [
+      "Enormous cargo hold",
+      "Low cost per ton",
+      "Great for mining operations"
+    ],
+    "weaknesses": [
+      "Terrible maneuverability",
+      "Barely armed",
+      "Vulnerable without escorts"
+    ]
+  },
+  {
+    "id": "ship_type_10_defender",
+    "name": "Type-10 Defender",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Combat Support / Multirole",
+    "size": "Large",
+    "description": "A modified combat version of the Type-9, the Type-10 Defender is designed to absorb and return fire in Thargoid encounters and high-threat CZs.",
+    "strengths": [
+      "Excellent hardpoint coverage",
+      "Tough hull",
+      "Great for anti-xeno loadouts"
+    ],
+    "weaknesses": [
+      "Still slow",
+      "Suboptimal jump range",
+      "Needs engineering to perform"
+    ]
+  },
+  {
+    "id": "ship_anaconda",
+    "name": "Anaconda",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Heavy Multipurpose / Exploration",
+    "size": "Large",
+    "description": "The Anaconda is one of the most iconic ships in the galaxy. Capable of nearly every role, it boasts incredible jump range, massive internal space, and serious firepower.",
+    "strengths": [
+      "Top-tier jump range",
+      "Strong firepower",
+      "Huge internals"
+    ],
+    "weaknesses": [
+      "Expensive to outfit",
+      "Large rebuy cost",
+      "Slow to maneuver"
+    ]
+  },
+  {
+    "id": "ship_beluga_liner",
+    "name": "Beluga Liner",
+    "manufacturer": "Saud Kruger",
+    "role": "Luxury Passenger Transport",
+    "size": "Large",
+    "description": "The Beluga is the premier luxury vessel, catering to the elite. Though spacious and elegant, it requires careful piloting and internal rework to shine.",
+    "strengths": [
+      "Tons of passenger capacity",
+      "Stylish as hell",
+      "Low heat build"
+    ],
+    "weaknesses": [
+      "Low agility",
+      "Hard to dock",
+      "Odd internals without modding"
+    ]
+  },
+  {
+    "id": "ship_type_6_transporter",
+    "name": "Type-6 Transporter",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Light Cargo Transport",
+    "size": "Medium",
+    "description": "A dependable trader, the Type-6 offers good cargo capacity at a low price. It's a great choice for newer pilots looking to scale up their cargo runs.",
+    "strengths": [
+      "Affordable",
+      "Decent jump range",
+      "Low operating cost"
+    ],
+    "weaknesses": [
+      "Weak shields",
+      "No combat capability",
+      "Large profile for its size"
+    ]
+  },
+  {
+    "id": "ship_type_7_transporter",
+    "name": "Type-7 Transporter",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Bulk Trader",
+    "size": "Medium",
+    "description": "The Type-7 is a dedicated cargo hauler designed for maximum transport capacity on a medium pad. It's commonly used for mining support and mid-level trading.",
+    "strengths": [
+      "Large cargo hold",
+      "Cheap to insure",
+      "Good for mining support"
+    ],
+    "weaknesses": [
+      "Weak maneuvering",
+      "Paper-thin defenses",
+      "Long docking time"
+    ]
+  },
+  {
+    "id": "ship_type_8_transporter",
+    "name": "Type-8 Transporter",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Heavy Multipurpose",
+    "size": "Medium",
+    "description": "The Type-8 is the spiritual successor to the Type-7, offering better internals, stronger defensive capability, and a fighter bay. It's ideal for bulk transport in dangerous regions.",
+    "strengths": [
+      "Improved armor and shields",
+      "Optional fighter bay",
+      "Large cargo space"
+    ],
+    "weaknesses": [
+      "Still handles like a brick",
+      "Not a combat ship",
+      "Requires engineering to shine"
+    ]
+  },
+  {
+    "id": "ship_keelback",
+    "name": "Keelback",
+    "manufacturer": "Lakon Spaceways",
+    "role": "Utility Trader / Fighter Carrier",
+    "size": "Medium",
+    "description": "A hybrid trader with access to a fighter bay, the Keelback is used for mining, support roles, and light transport missions. Its flexibility makes it a favorite among mission runners.",
+    "strengths": [
+      "Fighter bay on a medium pad",
+      "Durable hull",
+      "Versatile build options"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Limited internals",
+      "Underwhelming weapon layout"
+    ]
+  },
+  {
+    "id": "ship_python",
+    "name": "Python",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Multipurpose",
+    "size": "Medium",
+    "description": "The Python is a medium-padded juggernaut\u2014capable of combat, trading, mining, or exploration. It's often regarded as the best all-rounder in the galaxy.",
+    "strengths": [
+      "Huge cargo potential on medium pads",
+      "Strong shields",
+      "Great firepower"
+    ],
+    "weaknesses": [
+      "Expensive for new players",
+      "Can overheat under load",
+      "Takes finesse to fly well"
+    ]
+  },
+  {
+    "id": "ship_orca",
+    "name": "Orca",
+    "manufacturer": "Saud Kruger",
+    "role": "Passenger Transport / Luxury",
+    "size": "Medium",
+    "description": "The Orca is a stylish Saud Kruger passenger liner used for sightseeing and luxury tours. It\u2019s sleek, fast, and easily modded for exploration or stealth transport.",
+    "strengths": [
+      "Fast",
+      "Great cockpit visibility",
+      "Low heat profile"
+    ],
+    "weaknesses": [
+      "Limited hardpoints",
+      "No utility mounts",
+      "Niche internals"
+    ]
+  },
+  {
+    "id": "ship_dolphin",
+    "name": "Dolphin",
+    "manufacturer": "Saud Kruger",
+    "role": "Luxury Transport / Exploration",
+    "size": "Small",
+    "description": "The Dolphin is the smallest of the Saud Kruger luxury vessels. Often used for light passenger runs, it's also a surprising favorite among explorers for its heat efficiency.",
+    "strengths": [
+      "Very efficient heat dissipation",
+      "Quiet engine signature",
+      "Excellent cockpit view"
+    ],
+    "weaknesses": [
+      "Limited hardpoints",
+      "Lower cargo space",
+      "Requires precise outfitting"
+    ]
+  },
+  {
+    "id": "ship_sidewinder_mk_i",
+    "name": "Sidewinder Mk I",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Starter Ship",
+    "size": "Small",
+    "description": "The Sidewinder Mk I is the default starter ship provided to all new pilots. While lightly armed and fragile, it is agile and cost-effective, perfect for training and short-range missions.",
+    "strengths": [
+      "Free on rebuy",
+      "Agile",
+      "Versatile"
+    ],
+    "weaknesses": [
+      "Weak shields",
+      "Limited internals",
+      "Short jump range"
+    ]
+  },
+  {
+    "id": "ship_eagle_mk_ii",
+    "name": "Eagle Mk II",
+    "manufacturer": "Core Dynamics",
+    "role": "Light Fighter",
+    "size": "Small",
+    "description": "The Eagle Mk II is a fast and nimble ship often used for combat training and bounty hunting. While fragile, its maneuverability is unmatched among small ships.",
+    "strengths": [
+      "Very agile",
+      "Great for dogfighting",
+      "Low cost"
+    ],
+    "weaknesses": [
+      "Weak hull",
+      "Small internal space",
+      "Low survivability"
+    ]
+  },
+  {
+    "id": "ship_hauler",
+    "name": "Hauler",
+    "manufacturer": "Zorgon Peterson",
+    "role": "Light Cargo Transport",
+    "size": "Small",
+    "description": "The Hauler is an early-game cargo ship with excellent jump range and low cost. It can also be outfitted as an inexpensive explorer.",
+    "strengths": [
+      "Excellent jump range",
+      "Affordable",
+      "Great for exploration"
+    ],
+    "weaknesses": [
+      "Very limited weapons",
+      "Weak shields",
+      "Low cargo space"
+    ]
+  },
+  {
+    "id": "ship_adder",
+    "name": "Adder",
+    "manufacturer": "Zorgon Peterson",
+    "role": "Multipurpose",
+    "size": "Small",
+    "description": "The Adder is a balanced multipurpose ship capable of light combat, trading, and short-range exploration. It's a solid step up from the Hauler or Sidewinder.",
+    "strengths": [
+      "Flexible internals",
+      "Inexpensive",
+      "Surprisingly tanky"
+    ],
+    "weaknesses": [
+      "Low top speed",
+      "Limited hardpoints"
+    ]
+  },
+  {
+    "id": "ship_viper_mk_iii",
+    "name": "Viper Mk III",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Combat",
+    "size": "Small",
+    "description": "The Viper Mk III is a nimble and affordable combat ship, ideal for bounty hunting and interdictions. Its iconic profile and speed make it a staple in security fleets.",
+    "strengths": [
+      "High speed",
+      "Strong burst DPS",
+      "Cheap rebuy"
+    ],
+    "weaknesses": [
+      "Weak armor",
+      "Poor internals"
+    ]
+  },
+  {
+    "id": "ship_viper_mk_iv",
+    "name": "Viper Mk IV",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Heavy Combat",
+    "size": "Small",
+    "description": "The Viper Mk IV trades some of the Mk III\u2019s speed for more armor and module slots. It\u2019s a rugged brawler that can take hits while delivering steady firepower.",
+    "strengths": [
+      "Better durability than Mk III",
+      "Extra internals"
+    ],
+    "weaknesses": [
+      "Slower than Mk III",
+      "Still limited overall"
+    ]
+  },
+  {
+    "id": "ship_cobra_mk_iii",
+    "name": "Cobra Mk III",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Multipurpose",
+    "size": "Small",
+    "description": "The legendary Cobra Mk III is one of the most versatile and iconic ships in the galaxy. It's fast, agile, and capable of taking on almost any role with the right outfitting.",
+    "strengths": [
+      "Fast",
+      "Well-rounded",
+      "Good jump range"
+    ],
+    "weaknesses": [
+      "Limited internals for late-game roles"
+    ]
+  },
+  {
+    "id": "ship_cobra_mk_iv",
+    "name": "Cobra Mk IV",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Multipurpose (Bulkier)",
+    "size": "Small",
+    "description": "The Cobra Mk IV is a more armored version of the Cobra Mk III with additional internals. However, its sluggish maneuverability makes it less favored in combat.",
+    "strengths": [
+      "More internal compartments",
+      "Tougher than Mk III"
+    ],
+    "weaknesses": [
+      "Much slower",
+      "Limited availability"
+    ]
+  },
+  {
+    "id": "ship_cobra_mk_v",
+    "name": "Cobra Mk V",
+    "manufacturer": "Faulcon DeLacy",
+    "role": "Advanced Multipurpose",
+    "size": "Small",
+    "description": "The Cobra Mk V builds on the legendary legacy of the Cobra series with improved heat management, hardpoint placement, and better loadout flexibility.",
+    "strengths": [
+      "Modernized internals",
+      "Improved heat dispersion",
+      "Strong maneuverability"
+    ],
+    "weaknesses": [
+      "Higher cost than Mk III",
+      "Still vulnerable in prolonged fights"
+    ]
+  }
+]
