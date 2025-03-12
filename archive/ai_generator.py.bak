@@ -1,0 +1,202 @@
+import json
+import os
+import logging
+import requests
+import glob
+import argparse
+from datetime import datetime
+from typing import List, Dict, Any, Tuple, Optional
+from collections import defaultdict
+import chromadb
+from sentence_transformers import SentenceTransformer
+
+# Set up logging configuration
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+# Load configuration
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
+try:
+    with open(CONFIG_PATH, "r") as f:
+        config: Dict[str, Any] = json.load(f)
+except Exception as e:
+    logging.error(f"Failed to load config from {CONFIG_PATH}: {e}")
+    raise
+
+LM_STUDIO_API: str = config.get("lm_studio_api", "")
+MODEL_NAME: str = config.get("model_name", "")
+
+BASE_FOLDER = os.path.dirname(__file__)
+RAG_DATA_FOLDER = os.path.join(BASE_FOLDER, "rag_data")
+COMMANDER_LOGS_FOLDER = os.path.join(RAG_DATA_FOLDER, "commander_logs")
+DIARY_OUTPUT_FOLDER = os.path.join(BASE_FOLDER, "diary_logs")
+PROMPT_LOG_FILE = os.path.join(BASE_FOLDER, "diary_prompt.log")
+
+os.makedirs(DIARY_OUTPUT_FOLDER, exist_ok=True)
+
+# Initialize ChromaDB client and embedding model
+chroma_client = chromadb.PersistentClient(path="elite_rag_db")
+collection = chroma_client.get_or_create_collection("elite_dangerous_lore")
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+
+knowledge_base: Dict[str, Any] = {
+    "commanders": {}
+}
+
+# Load Commander Profile
+profile_path = os.path.join(RAG_DATA_FOLDER, "commander_profile.json")
+if os.path.exists(profile_path):
+    try:
+        with open(profile_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, list) and data:
+                knowledge_base["commanders"]["profile"] = data[0]
+    except Exception as e:
+        logging.error(f"Failed to load commander profile: {e}")
+
+def compress_activities(activities: List[str]) -> List[str]:
+    prefix_counts = defaultdict(list)
+    for act in activities:
+        prefix = act.split("**")[0].strip().rstrip(":")
+        prefix_counts[prefix].append(act)
+
+    compressed = []
+    for prefix, lines in prefix_counts.items():
+        if len(lines) > 3:
+            sample = lines[0].replace("**", "")
+            compressed.append(f"Did the usual — {prefix.lower()} — around {len(lines)} times. Like this: '{sample}'")
+        else:
+            compressed.extend(lines)
+
+    return compressed
+
+def retrieve_knowledge(activities: List[str], top_k: int = 4) -> str:
+    combined_snippets = []
+    for activity in activities:
+        embedding = embedding_model.encode(activity).tolist()
+        try:
+            results = collection.query(query_embeddings=[embedding], n_results=top_k)
+            for md in results.get("metadatas", [[]])[0]:
+                text = md.get("text")
+                if text:
+                    combined_snippets.append(f"- {text}")
+        except Exception as e:
+            logging.warning(f"RAG retrieval failed for activity '{activity}': {e}")
+
+    return "\n".join(combined_snippets[:5]) if combined_snippets else ""
+
+def build_diary_prompt(cmdr_name: str, log_entry: str, session_activities: List[str]) -> str:
+    profile = knowledge_base.get("commanders", {}).get("profile", {})
+    clean_profile_lines = []
+    if profile:
+        if profile.get("name"): clean_profile_lines.append(f"- Name: {profile['name']}")
+        if profile.get("alias"): clean_profile_lines.append(f"- Alias: {profile['alias']}")
+        if profile.get("birthplace"): clean_profile_lines.append(f"- Birthplace: {profile['birthplace']}")
+        if profile.get("bio"): clean_profile_lines.append(f"- Background: {profile['bio']}")
+        if profile.get("notable_events"): clean_profile_lines.append(f"- Known For: {', '.join(profile['notable_events'])}")
+    backstory = "\nCommander Profile:\n" + "\n".join(clean_profile_lines) if clean_profile_lines else ""
+
+    compressed_activities = compress_activities(session_activities)
+    activity_block = "\n".join([f"- {a}" for a in compressed_activities])
+    knowledge_block = retrieve_knowledge(compressed_activities)
+
+    prompt = (
+        f"=== Personal Log: Commander {cmdr_name} ===\n\n"
+        f"{backstory}\n\n"
+        f"Another day out in the black...\n\n"
+        f"Here’s what went down today:\n{activity_block}\n\n"
+        f"{f'Supporting Knowledge:\n{knowledge_block}\n\n' if knowledge_block else ''}"
+        f"Close the log with whatever’s rattling around in your head. Be gritty, dry, sarcastic — whatever suits the mood. Wrap it with **[End of Log]**."
+    )
+    return prompt
+
+def generate_diary(cmdr_name: str, log_entry: str, session_activities: List[str]) -> str:
+    prompt = build_diary_prompt(cmdr_name, log_entry, session_activities)
+    logging.info(f"🧠 Prompt length: {len(prompt.split())} words")
+    try:
+        with open(PROMPT_LOG_FILE, "w", encoding="utf-8") as f:
+            f.write(prompt)
+            logging.info(f"📄 Prompt logged to: {PROMPT_LOG_FILE}")
+        response = requests.post(
+            LM_STUDIO_API,
+            json={
+                "model": MODEL_NAME,
+                "prompt": prompt,
+                "max_tokens": 1000,
+                "temperature": 0.7,
+                "top_p": 0.9,
+            },
+            timeout=180
+        )
+        response.raise_for_status()
+        return response.json()["choices"][0]["text"].strip()
+    except Exception as e:
+        logging.error(f"Error generating diary: {e}")
+        return "Error: Unable to generate Commander’s Diary."
+
+def save_diary_text(date: str, text: str) -> None:
+    output_path = os.path.join(DIARY_OUTPUT_FOLDER, f"{date}.txt")
+    try:
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(text)
+        logging.info(f"📝 Diary saved to: {output_path}")
+    except Exception as e:
+        logging.error(f"❌ Failed to save diary to file: {e}")
+
+def load_commander_log(date: Optional[str] = None) -> Tuple[str, str, List[str]]:
+    json_files = sorted(glob.glob(os.path.join(COMMANDER_LOGS_FOLDER, "*.json")))
+    if not json_files:
+        logging.error("No commander log JSON files found.")
+        return "", "", []
+
+    if date:
+        target_file = os.path.join(COMMANDER_LOGS_FOLDER, f"{date}.json")
+        if not os.path.exists(target_file):
+            logging.error(f"Requested log file not found for date: {date}")
+            return "", "", []
+    else:
+        target_file = max(json_files, key=os.path.getmtime)
+        date = os.path.splitext(os.path.basename(target_file))[0]
+
+    try:
+        with open(target_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            cmdr_name = data.get("commander", "Unknown Commander")
+            session_activities = []
+            for category, items in data.get("categories", {}).items():
+                session_activities.extend(items)
+            return cmdr_name, date, session_activities
+    except Exception as e:
+        logging.error(f"Failed to load log: {e}")
+        return "", "", []
+
+def list_available_log_dates() -> List[str]:
+    json_files = sorted(glob.glob(os.path.join(COMMANDER_LOGS_FOLDER, "*.json")))
+    return [os.path.splitext(os.path.basename(f))[0] for f in json_files]
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate Elite Dangerous Commander Diary")
+    parser.add_argument("--date", type=str, help="Optional log date in YYYY-MM-DD format")
+    args = parser.parse_args()
+
+    selected_date = args.date
+
+    if not selected_date:
+        print("\n📅 Available Commander Log Dates:")
+        available_dates = list_available_log_dates()
+        for i, d in enumerate(available_dates):
+            print(f"{i+1}. {d}")
+        try:
+            choice = input("\nEnter number to select date or press Enter to use latest: ")
+            if choice.strip().isdigit():
+                selected_date = available_dates[int(choice)-1]
+        except Exception:
+            pass
+
+    cmdr_name, selected_date, session_activities = load_commander_log(selected_date)
+    if selected_date:
+        diary = generate_diary(cmdr_name, selected_date, session_activities)
+        print(f"\n📖 {cmdr_name}’s Personal Log ({selected_date}):\n")
+        print(diary)
+        save_diary_text(selected_date, diary)
+    else:
+        print("No valid commander log found.")
